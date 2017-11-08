@@ -38,7 +38,7 @@
   				<img src="img/selfie-item.jpg" width="100" height="100" alt="Монопод для селфи">
   				<p class="slider-title">Делай селфи, как Бен Стиллер!</p>
   				<p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом 5 килограмм.</p>
-  				<a class="slider-more" href="#">Подробнее</a>
+  				<a class="button" href="#">Подробнее</a>
   				<table class="slider-table">
   					<tr class="slider-table-features">
   						<td>8,5 м</td>
@@ -57,7 +57,7 @@
   				<img src="img/fitness-item.jpg" width="100" height="100" alt="Фитнесбраслет">
   				<p class="slider-title">Худеем правильно!</p>
   				<p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-  				<a class="slider-more" href="#">Подробнее</a>
+  				<a class="button" href="#">Подробнее</a>
   				<table class="slider-table">
   					<tr class="slider-table-features">
   						<td>48 часов</td>
@@ -72,7 +72,7 @@
   				<img src="img/quadrupter-item.jpg" width="100" height="100" alt="Квадрокоптер">
   				<p class="slider-title">Пархает как бабочка, жалит как пчела!</p>
   				<p class="slider-description">Этот обычный, на первый взгляд, оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-  				<a class="slider-more" href="#">Подробнее</a>
+  				<a class="button" href="#">Подробнее</a>
   				<table class="slider-table">
   					<tr class="slider-table-features">
   						<td>800 м</td>
@@ -102,17 +102,17 @@
   			<!-- Тут не уверен. Планирую абзацы сделать прозрачными. И при клике на ссылку убирать прозрачность у соответствующего абзаца. Но правильно ли все запихивать в один пункт меню? -->
   			<ul class="service-list">
   				<li class="service-item">
-  					<a class="service-link" href="#">Доставка</a>
+  					<a class="button" href="#">Доставка</a>
   					<h3 class="service-title">Доставка</h3>
   					<p class="service-text">Мы с удовольствие доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
   				</li>
   				<li class="service-item">
-  					<a class="service-link" href="#">Гарантия</a>
+  					<a class="button" href="#">Гарантия</a>
   					<h3 class="service-title">Гарантия</h3>
   					<p class="service-text">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
   				</li>
   				<li class="service-item">
-  					<a class="service-link" href="#">Кредит</a>
+  					<a class="button" href="#">Кредит</a>
   					<h3 class="service-title">Кредит</h3>
   					<p class="service-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
   				</li>
@@ -135,13 +135,13 @@
   				<li>Автотрейдинг</li>
   				<li>ЖелДорЭкспедиция</li>
   			</ul>
-  			<a class="about-more" href="#">Подробнее о нас</a>
+  			<a class="button" href="#">Подробнее о нас</a>
   		</section>
   		<section class="conatacts">
   			<h2>Контакты</h2>
   			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-  			<img src="img/map.jpg" width="300" height="150" alt="Местоположение магазина на карте">
-  			<a href="#">Напишите нам</a>
+  			<a class="conatacts-map" href="https://yandex.ru/maps"><img src="img/map.jpg" width="300" height="150" alt="Местоположение магазина на карте"></a>
+  			<a class="button" href="#">Напишите нам</a>
   		</section>
   	</main>
   	<footer class="main-footer">
@@ -163,7 +163,22 @@
   			<li><a class="social-button" href="#">Инстаграмм</a></li>
   			<li><a class="social-button" href="#">Твиттер</a></li>
   		</ul>
-  		<a href="http://htmlacademy.ru"><img class="copyright" src="img/copyright.jpg" width="25" height="25" alt="Логотип HTML Academy"></a>
+  		<a href="https://htmlacademy.ru/intensive/htmlcss"><img class="copyright" src="img/copyright.jpg" width="25" height="25" alt="Логотип HTML Academy"></a>
   	</footer>
+  	<section class="popup write-us">
+  		<h2>Обратная связь</h2>
+  		<p>Ваше имя:</p>
+  		<!-- Здесь будет форма-->
+  		<p>Ваш e-mail:</p>
+  		<!-- Здесь будет форма -->
+  		<p>Текст письма:</p>
+  		<!-- Здесь будет форма -->
+  		<span class="button">Отправить</span>
+  		<span class="popup-close">x</span>
+  	</section>
+  	<section class="popup map">
+  		<img class="map-fullsize" src="img/map-fullsize.jpg" width="300" height="300" alt="Местоположение магазина на карте"></img>
+  		<span class="popup-close">x</span>
+  	</section>
   </body>
 </html>
