@@ -10,31 +10,31 @@
   		<nav class="main-navigation">
   			<!-- Здесь будет форма поиска -->
   			<ul class="user-navigation">
-  				<li class="login-link"><a href="#">Войти</a></li>
-  				<li class="compare"><a href="#">Сравнить</a></li>
-  				<li class="basket"><a href="#">Корзина</a></li>
+  				<li><a class="login-link" href="#">Войти</a></li>
+  				<li><a class="compare" href="#">Сравнить</a></li>
+  				<li><a class="basket" href="#">Корзина</a></li>
   			</ul>
   			<ul class="site-navigation">
-  				<li class="catalog"><a href="#">Каталог товаров</a>
-  					<ul class="hidden">
-  						<li><a href="#">Виртульная реальность</a></li>
-  						<li><a href="#">Фитнес браслеты</a></li>
-  						<li><a href="#">Квадрокоптеры</a></li>
-  						<li><a href="#">Моноподы для селфи</a></li>
-  						<li><a href="#">Умные часы</a></li>
-  						<li><a href="#">Экшн-камеры</a></li>
+  				<li><a class="menu menu-catalog" href="#">Каталог товаров</a>
+  					<ul class="submenu">
+  						<li><a class="submenu-item" href="#">Виртульная реальность</a></li>
+  						<li><a class="submenu-item" href="#">Фитнес браслеты</a></li>
+  						<li><a class="submenu-item" href="#">Квадрокоптеры</a></li>
+  						<li><a class="submenu-item" href="#">Моноподы для селфи</a></li>
+  						<li><a class="submenu-item" href="#">Умные часы</a></li>
+  						<li><a class="submenu-item" href="#">Экшн-камеры</a></li>
   					</ul>
   				</li>
-  				<li><a href="#">Доставка</a></li>
-  				<li><a href="#">Гарантия</a></li>
-  				<li><a href="#">Контакты</a></li>
+  				<li><a class="menu" href="#">Доставка</a></li>
+  				<li><a class="menu" href="#">Гарантия</a></li>
+  				<li><a class="menu" href="#">Контакты</a></li>
   			</ul>
   		</nav>
   	</header>
   	<main class="container">
   		<h1 class="visually-hidden">Магазин электронных товаров Device</h1>
   		<section class="slider">
-  			<div class="slider-selfie">
+  			<div class="slider-wrap">
   				<h2 class="visually-hidden">Монопод для селфи</h2>
   				<img src="img/selfie-item.jpg" width="100" height="100" alt="Монопод для селфи">
   				<p class="slider-title">Делай селфи, как Бен Стиллер!</p>
@@ -53,7 +53,7 @@
   					</tr>
   				</table>
   			</div>
-  			<div class="slider-fitness">
+  			<div class="slider-wrap">
   				<h2 class="visually-hidden">Фитнесбраслет</h2>
   				<img src="img/fitness-item.jpg" width="100" height="100" alt="Фитнесбраслет">
   				<p class="slider-title">Худеем правильно!</p>
@@ -68,7 +68,7 @@
   					</tr>
   				</table>
   			</div>
-  			<div class="slider-quadrupter">
+  			<div class="slider-wrap">
   				<h2 class="visually-hidden">Квадрокоптер</h2>
   				<img src="img/quadrupter-item.jpg" width="100" height="100" alt="Квадрокоптер">
   				<p class="slider-title">Пархает как бабочка, жалит как пчела!</p>
@@ -90,12 +90,12 @@
   		<section class="popular">
   			<h2 class="visually-hidden">Популярные товары</h2>
   			<ul class="popular-list">
-  				<li class="popular-item vr"><a href="#">Виртульная реальность</a></li>
-  				<li class="popular-item selfie"><a href="#">Моноподы для селфи</a></li>
-  				<li class="popular-item camera"><a href="#">Экшн-камеры</a></li>
-  				<li class="popular-item fitness"><a href="#">Фитнес-браслеты</a></li>
-  				<li class="popular-item watch"><a href="#">Умные часы</a></li>
-  				<li class="popular-item quadrupter"><a href="#">Квадрокоптеры</a></li>
+  				<li><a class="popular-item vr" href="#">Виртульная реальность</a></li>
+  				<li><a class="popular-item selfie" href="#">Моноподы для селфи</a></li>
+  				<li><a class="popular-item camera" href="#">Экшн-камеры</a></li>
+  				<li><a class="popular-item fitness" href="#">Фитнес-браслеты</a></li>
+  				<li><a class="popular-item watch" href="#">Умные часы</a></li>
+  				<li><a class="popular-item quadrupter" href="#">Квадрокоптеры</a></li>
   			</ul>
   		</section>
   		<section class="service">
@@ -121,10 +121,10 @@
   		</section>
   		<section class="brands">
   			<ul class="brands-list">
-  				<li><img src="img/logo-1.jpg" width="100" height="100" alt="Логотип 1"></li>
-  				<li><img src="img/logo-2.jpg" width="100" height="100" alt="Логотип 2"></li>
-  				<li><img src="img/logo-3.jpg" width="100" height="100" alt="Логотип 3"></li>
-  				<li><img src="img/logo-4.jpg" width="100" height="100" alt="Логотип 4"></li>
+  				<li><a href="#"><img src="img/logo-1.jpg" width="100" height="100" alt="Логотип 1"></a></li>
+  				<li><a href="#"><img src="img/logo-2.jpg" width="100" height="100" alt="Логотип 2"></a></li>
+  				<li><a href="#"><img src="img/logo-3.jpg" width="100" height="100" alt="Логотип 3"></a></li>
+  				<li><a href="#"><img src="img/logo-4.jpg" width="100" height="100" alt="Логотип 4"></a></li>
   			</ul>
   		</section>
   		<section class="about">
@@ -147,11 +147,11 @@
   	</main>
   	<footer class="main-footer">
   		<p class="logo-title">Device</p>
-  		<ul class="user-navigation">
-  				<li class="login-link"><a href="#">Войти</a></li>
-  				<li class="compare"><a href="#">Сравнить</a></li>
-  				<li class="basket"><a href="#">Корзина</a></li>
-  		</ul>
+  		<ul class="footer-user-navigation">
+  				<li><a class="footer-login-link" href="#">Войти</a></li>
+  				<li><a class="footer-compare" href="#">Сравнить</a></li>
+  				<li><a class="footer-basket" href="#">Корзина</a></li>
+  			</ul>
   		<p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
   		<ul class="footer-menu">
   			<li><a href="#">Доставка</a></li>
@@ -160,9 +160,9 @@
   		</ul>
   		<p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
   		<ul class="footer-social">
-  			<li><a class="social-button" href="#">Фейсбук</a></li>
-  			<li><a class="social-button" href="#">Инстаграмм</a></li>
-  			<li><a class="social-button" href="#">Твиттер</a></li>
+  			<li><a class="social-button social-fb" href="#">Фейсбук</a></li>
+  			<li><a class="social-button social-instagramm" href="#">Инстаграмм</a></li>
+  			<li><a class="social-button social-twitter" href="#">Твиттер</a></li>
   		</ul>
   		<a href="https://htmlacademy.ru/intensive/htmlcss"><img class="copyright" src="img/copyright.jpg" width="25" height="25" alt="Логотип HTML Academy"></a>
   	</footer>
