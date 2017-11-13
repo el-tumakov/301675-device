@@ -8,7 +8,12 @@
   	<header class="main-header">
   		<p><a class="logo-title">Device</a></p>
   		<nav class="main-navigation">
-  			<!-- Здесь будет форма поиска -->
+  			<form class="search" action="https://echo.htmlacademy.ru" method="post">
+  				<p>
+  					<label class="visually-hidden" for="search">Поиск по сайту</label>
+  					<input id="search" type="search" name="search" value="" placeholder="Поиск по сайту">
+  				</p>
+  			</form>
   			<ul class="user-navigation">
   				<li><a class="login-link" href="#">Войти</a></li>
   				<li><a class="compare" href="#">Сравнить</a></li>
@@ -84,7 +89,14 @@
   						<th>Радиус поражения</th>
   					</tr>
   				</table>
-  				<!-- Здесь будет форма радиопереключателей для слайдера -->
+  				<form class="slider-radio" action="https://echo.htmlacademy.ru" method="post">
+  					<label class="visually-hidden" for="selfie">Монопод для селфи</label>
+  					<input id="selfie" class="slider-radio-item" type="radio" name="slider-radio" value="" checked>
+  					<label class="visually-hidden" for="fitness">Фитнесбраслет</label>
+  					<input id="fitness" class="slider-radio-item" type="radio" name="slider-radio" value="">
+  					<label class="visually-hidden" for="quadrupter">Квадрокоптер</label>
+  					<input id="quadrupter" class="slider-radio-item" type="radio" name="slider-radio" value="">
+  				</form>
   			</div>
   		</section>
   		<section class="popular">
@@ -100,7 +112,6 @@
   		</section>
   		<section class="service">
   			<h2 class="visually-hidden">Услуги</h2>
-  			<!-- Тут не уверен. Планирую абзацы сделать прозрачными. И при клике на ссылку убирать прозрачность у соответствующего абзаца. Но правильно ли все запихивать в один пункт меню? -->
   			<ul class="service-list">
   				<li class="service-item">
   					<a class="button" href="#">Доставка</a>
@@ -167,19 +178,27 @@
   		<a href="https://htmlacademy.ru/intensive/htmlcss"><img class="copyright" src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy"></a>
   	</footer>
   	<section class="popup write-us">
-  		<h2>Обратная связь</h2>
-  		<p>Ваше имя:</p>
-  		<!-- Здесь будет форма-->
-  		<p>Ваш e-mail:</p>
-  		<!-- Здесь будет форма -->
-  		<p>Текст письма:</p>
-  		<!-- Здесь будет форма -->
-  		<span class="button">Отправить</span>
-  		<span class="popup-close">x</span>
+  		<h2 class="visually-hidden">Обратная связь</h2>
+  			<form class="write-us-form">
+  				<p class="write-us-item">
+  					<label for="name">Ваше имя:</label>
+  					<input type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+  				</p>
+  				<p class="write-us-item">
+  					<label for="e-mail">Ваш e-mail:</label>
+  					<input id="e-mail" type="email" name="" value="" placeholder="Для отправки ответа">
+  				</p>
+  				<p class="write-us-item">
+  					<label for="content">Текст письма:</label>
+  					<input id="content" type="text" name="content" value="" placeholder="В свободной форме">
+  				</p>
+  				<button class="button" type="submit">Отправить</button>
+  			</form>
+  		<button class="popup-close">Закрыть</button>
   	</section>
   	<section class="popup map">
   		<img class="map-fullsize" src="img/map-big.jpg" width="960" height="559" alt="Местоположение магазина на карте">
-  		<span class="popup-close">x</span>
+  		<button class="popup-close">Закрыть</button>
   	</section>
   </body>
 </html>
