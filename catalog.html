@@ -8,7 +8,12 @@
 		<header class="main-header">
   		<p><a class="logo-title" href="index.html">Device</a></p>
   		<nav class="main-navigation">
-  			<!-- Здесь будет форма поиска -->
+  			<form class="search" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label class="visually-hidden" for="search">Поиск по сайту</label>
+            <input id="search" type="search" name="search" value="" placeholder="Поиск по сайту">
+          </p>
+        </form>
   			<ul class="user-navigation">
   				<li><a class="profile" href="#">Валентин Петухов</a></li>
   				<li><a class="login-link" href="#">Выйти</a></li>
@@ -41,7 +46,28 @@
   		</ul>
   		<section class="filter">
   			<h2 class="visually-hidden">Фильтр товаров</h2>
-  			<!-- Здесь будет форма -->
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+          <hr>
+          <p class="filter-item">
+            <label for="filter-item-title">Стоимость</label>
+            <input id="price" type="range" name="price" value="">
+          </p>
+          <hr>
+          <p class="filter-item">
+            <span class="filter-item-title">Цвет</span>
+            <label><input type="checkbox" name="color" value="" checked>Черный</label>
+            <label><input type="checkbox" name="color" value="">Белый</label>
+            <label><input type="checkbox" name="color" value="" checked>Синий</label>
+            <label><input type="checkbox" name="color" value="" checked>Красный</label>
+            <label><input type="checkbox" name="color" value="">Розовый</label>
+          </p>
+          <p class="filter-item">
+            <span class="filter-item-title">Bluetooth</span>
+            <label><input type="radio" name="bluetooth" value="" checked>Есть</label>
+            <label><input type="radio" name="bluetooth" value="">Нет</label>
+          </p>
+          <button class="button" type="submit">Показать</button>
+        </form>
   		</section>
   		<section class="catalog">
   			<div class="catalog-sort">
@@ -51,8 +77,8 @@
   					<li><a href="#">По типу</a></li>
   					<li><a href="#">По популрности</a></li>
   				</ul>
-  				<span class="sort-up"><a href="#">up</a></span>
-  				<span class="sort-down"><a href="#">down</a></span>
+  				<button class="sort-up">По возрастанию</button>
+  				<button class="sort-down">По убыванию</button>
   			</div>
   			<div class="catalog-content">
   				<h2 class="visually-hidden">Список моноподов для селфи</h2>
