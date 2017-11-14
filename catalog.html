@@ -50,21 +50,21 @@
           <hr>
           <p class="filter-item">
             <label for="filter-item-title">Стоимость</label>
-            <input id="price" type="range" name="price" value="">
+            <input class="filter-price" id="price" type="range" name="price" value="">
           </p>
           <hr>
           <p class="filter-item">
             <span class="filter-item-title">Цвет</span>
-            <label><input type="checkbox" name="color" value="" checked>Черный</label>
-            <label><input type="checkbox" name="color" value="">Белый</label>
-            <label><input type="checkbox" name="color" value="" checked>Синий</label>
-            <label><input type="checkbox" name="color" value="" checked>Красный</label>
-            <label><input type="checkbox" name="color" value="">Розовый</label>
+            <label class="filter-color-title"><input class="filter-color-item" type="checkbox" name="color-black" checked>Черный</label>
+            <label class="filter-color-title"><input class="filter-color-item" type="checkbox" name="color-white">Белый</label>
+            <label class="filter-color-title"><input class="filter-color-item" type="checkbox" name="color-blue" checked>Синий</label>
+            <label class="filter-color-title"><input class="filter-color-item" type="checkbox" name="color-red" checked>Красный</label>
+            <label class="filter-color-title"><input class="filter-color-item" type="checkbox" name="color-pink">Розовый</label>
           </p>
           <p class="filter-item">
             <span class="filter-item-title">Bluetooth</span>
-            <label><input type="radio" name="bluetooth" value="" checked>Есть</label>
-            <label><input type="radio" name="bluetooth" value="">Нет</label>
+            <label class="filter-bluetooth-title"><input class="filter-bluetooth-item" type="radio" name="bluetooth" value="bluetooth-on" checked>Есть</label>
+            <label class="filter-bluetooth-title"><input class="filter-bluetooth-item" type="radio" name="bluetooth" value="bluetooth-off">Нет</label>
           </p>
           <button class="button" type="submit">Показать</button>
         </form>
