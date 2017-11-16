@@ -98,10 +98,28 @@ a {
 	opacity: 1;
 }
 
+.button-search {
+	display: none;
+}
+/*Не понимаю, почему не появляется кнопка*/
+.search input:focus .button-search {
+	display: block;
+}
+
 .user-menu,
 .site-menu,
 .submenu {
 	list-style: none;
+}
+
+.site-menu-link {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: auto;
+	letter-spacing: 0.2em;
+	color: #000000;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .user-menu-link,
