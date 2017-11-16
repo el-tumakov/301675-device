@@ -4,7 +4,7 @@
 	font-style: normal;
 	src:
 		local("Gilroy Light"),
-		url("/fonts/gilroylight.woff2") format("woff2");
+		url("../fonts/gilroylight.woff2") format("woff2");
 }
 
 @font-face {
@@ -13,7 +13,7 @@
 	font-style: normal;
 	src:
 		local("Gilroy ExtraBold"),
-		url("/fonts/gilroyextrabold.woff2") format("woff2");
+		url("../fonts/gilroyextrabold.woff2") format("woff2");
 }
 
 @font-face {
@@ -22,7 +22,7 @@
 	font-style: normal;
 	src:
 		local("Open Sans Light"),
-		url("/fonts/opensanslight.woff2") format("woff2");
+		url("../fonts/opensanslight.woff2") format("woff2");
 }
 
 @font-face {
@@ -30,8 +30,8 @@
 	font-weight: normal;
 	font-style: normal;
 	src:
-		local("Open Sans "),
-		url("/fonts/opensans.woff2") format("woff2");
+		local("Open Sans"),
+		url("../fonts/opensans.woff2") format("woff2");
 }
 
 .visually-hidden {
@@ -53,8 +53,8 @@ body {
 
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
-	line-height: 30px;
 	font-weight: 300;
+	line-height: 30px;
 	letter-spacing: 0.01em;
 	color: #464646;
 
@@ -69,9 +69,33 @@ a {
 	background-color: #f7e296;
 }
 
+.logo-title:hover {
+	opacity: 0.6;
+}
+
+.logo-title:active {
+	opacity: 0.3;
+}
+
 .main-navigation {
 	line-height: 36px;
 	color: black;
+}
+
+.search input {
+	font: inherit;
+
+	background-color: transparent;
+	border: 0;
+	opacity: 0.3;
+}
+
+.search input:hover {
+	opacity: 0.6;
+}
+
+.search input:focus {
+	opacity: 1;
 }
 
 .user-menu,
@@ -98,28 +122,34 @@ a {
 	opacity: 0.3;
 }
 
-.slider-title {
+.slider-title,
+.service-title,
+.about-title {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 47px;
-	line-height: auto;
 	font-weight: 700;
+	line-height: auto;
 	color: #000000;
 }
 
 .button {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
-	line-height: auto;
 	font-weight: 700;
+	line-height: auto;
 	letter-spacing: 0.2em;
 	color: #000000;
+}
+
+.button:active {
+	opacity: 0.3;
 }
 
 .slider-table-features {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 36px;
-	line-height: auto;
 	font-weight: normal;
+	line-height: auto;
 	color: #000000;
 }
 
@@ -127,4 +157,132 @@ a {
 	font-size: 13px;
 	font-weight: 300;
 	line-height: 20px;
+}
+
+.popular-list {
+	list-style: none;
+}
+
+.popular-item {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: auto;
+	color: #000000;
+}
+
+.popular-item:active {
+	opacity: 0.3;
+}
+
+.service {
+	background-color: #e5e5e5;
+}
+
+.service-list {
+	list-style: none;
+}
+
+.brands-list {
+	list-style: none;
+}
+
+/*Менять логотипы брендов при наведении буду с помощью абсолютного позиционирования.
+Размещу их друг под другом в html коде и буду изменять прозрачность при наведении.*/
+
+.transport-list {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 40px;
+	color: #000000;
+}
+
+.main-footer {
+	color: #ffffff;
+
+	background-color: #464646;
+	
+}
+
+.footer-user-menu,
+.footer-menu,
+.footer-social {
+	list-style: none;
+}
+
+.footer-user-menu a,
+.footer-menu a,
+.footer-social a {
+	color: #ffffff;
+}
+
+.footer-user-menu a {
+	opacity: 0.7;
+}
+
+.footer-user-menu a:hover {
+	opacity: 1;
+}
+
+.footer-user-menu a:active {
+	opacity: 0.3;
+}
+
+.footer-menu a:hover {
+	opacity: 0.6;
+}
+
+.footer-menu a:active {
+	opacity: 0.3;
+}
+
+.footer-social a {
+	opacity: 0.3;
+}
+
+.footer-social a:hover {
+	opacity: 0.6;
+}
+
+.footer-social a:active {
+	opacity: 0.1;
+}
+
+.write-us-form label {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 700;
+	color: #000000; 
+}
+
+.write-us-form input,
+.write-us-form textarea {
+	font: inherit;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	letter-spacing: auto;
+	opacity: 0.4;
+
+	border: 0;
+	background-color: rgba(229, 229, 229, 0.5);
+	
+}
+
+.write-us-form input:hover,
+.write-us-form textarea:hover {
+	background-color: rgba(229, 229, 229, 0.8);
+}
+
+.write-us-form input:focus,
+.write-us-form textarea:focus {
+	outline: 3px solid rgba(240, 194, 46, 0.5);
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.write-us-form input:invalid,
+.write-us-form textarea:invalid {
+	background-color: rgba(237, 181, 181, 0.5);
 }

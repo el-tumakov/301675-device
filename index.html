@@ -134,14 +134,34 @@
   		</section>
   		<section class="brands">
   			<ul class="brands-list">
-  				<li><a href="#"><img src="img/brand-1.png" width="260" height="100" alt="Логотип 1"></a></li>
-  				<li><a href="#"><img src="img/brand-2.png" width="260" height="100" alt="Логотип 2"></a></li>
-  				<li><a href="#"><img src="img/brand-3.png" width="260" height="100" alt="Логотип 3"></a></li>
-  				<li><a href="#"><img src="img/brand-4.png" width="260" height="100" alt="Логотип 4"></a></li>
+  				<li>
+  					<a class="brand-1" href="#">
+  						<img src="img/brand-1.png" width="260" height="100" alt="Логотип 1 - черно-белый">
+  						<img src="img/brand-1-hover.png" width="260" height="100" alt="Логотип 1 - цветной">
+  					</a>
+  				</li>
+  				<li>
+  					<a href="#">
+  						<img src="img/brand-2.png" width="260" height="100" alt="Логотип 2 - черно-белый">
+  						<img src="img/brand-2-hover.png" width="260" height="100" alt="Логотип 2 - цветной">
+  					</a>
+  				</li>
+  				<li>
+  					<a href="#">
+  						<img src="img/brand-3.png" width="260" height="100" alt="Логотип 3 - черно-белый">
+  						<img src="img/brand-3-hover.png" width="260" height="100" alt="Логотип 3 - цветной">
+  					</a>
+  				</li>
+  				<li>
+  					<a href="#">
+  						<img src="img/brand-4.png" width="260" height="100" alt="Логотип 4 - черно-белый">
+  						<img src="img/brand-4-hover.png" width="260" height="100" alt="Логотип 4 - цветной">
+  					</a>
+  				</li>
   			</ul>
   		</section>
   		<section class="about">
-  			<h2>О нас</h2>
+  			<h2 class="about-title">О нас</h2>
   			<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
   			<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
   			<ul class="transport-list">
@@ -152,15 +172,15 @@
   			<a class="button" href="#">Подробнее о нас</a>
   		</section>
   		<section class="conatacts">
-  			<h2>Контакты</h2>
+  			<h2 class="about-title">Контакты</h2>
   			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
   			<a class="conatacts-map" href="https://yandex.ru/maps"><img src="img/map.png" width="560" height="222" alt="Местоположение магазина на карте"></a>
   			<a class="button" href="#">Напишите нам</a>
   		</section>
   	</main>
   	<footer class="main-footer">
-  		<a class="logo-title"><img src="img/logo.png" width="164" height="36" alt="Логотип компании Device"></a>
-  		<ul class="footer-user-navigation">
+  		<a class="logo-title"><img src="img/logo-footer.png" width="164" height="36" alt="Логотип компании Device"></a>
+  		<ul class="footer-user-menu">
   				<li><a class="footer-login-link" href="#">Войти</a></li>
   				<li><a class="footer-compare" href="#">Сравнить</a></li>
   				<li><a class="footer-basket" href="#">Корзина</a></li>
@@ -184,7 +204,7 @@
   			<form class="write-us-form">
   				<p class="write-us-item">
   					<label for="name">Ваше имя:</label>
-  					<input type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+  					<input id="name" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
   				</p>
   				<p class="write-us-item">
   					<label for="e-mail">Ваш e-mail:</label>
@@ -192,7 +212,7 @@
   				</p>
   				<p class="write-us-item">
   					<label for="content">Текст письма:</label>
-  					<textarea id="content" name="content" placeholder="В свободной форме">
+  					<textarea id="content" name="content" placeholder="В свободной форме"></textarea>
   				</p>
   				<button class="button" type="submit">Отправить</button>
   			</form>
