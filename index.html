@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   	<header class="main-header">
-  		<p><a class="logo-title">Device</a></p>
+  		<a class="logo-title"><img src="img/logo.png" width="164" height="36" alt="Логотип компании Device"></a>
   		<nav class="main-navigation">
   			<form class="search" action="https://echo.htmlacademy.ru" method="post">
   				<p>
@@ -14,25 +16,25 @@
   					<input id="search" type="search" name="search" value="" placeholder="Поиск по сайту">
   				</p>
   			</form>
-  			<ul class="user-navigation">
-  				<li><a class="login-link" href="#">Войти</a></li>
-  				<li><a class="compare" href="#">Сравнить</a></li>
-  				<li><a class="basket" href="#">Корзина</a></li>
+  			<ul class="user-menu">
+  				<li><a class="user-menu-link login-link" href="#">Войти</a></li>
+  				<li><a class="user-menu-link compare" href="#">Сравнить</a></li>
+  				<li><a class="user-menu-link basket" href="#">Корзина</a></li>
   			</ul>
-  			<ul class="site-navigation">
-  				<li><a class="menu menu-catalog" href="#">Каталог товаров</a>
+  			<ul class="site-menu">
+  				<li><a class="site-menu-link site-menu-catalog" href="#">Каталог товаров</a>
   					<ul class="submenu">
-  						<li><a class="submenu-item" href="#">Виртульная реальность</a></li>
-  						<li><a class="submenu-item" href="#">Фитнес браслеты</a></li>
-  						<li><a class="submenu-item" href="#">Квадрокоптеры</a></li>
-  						<li><a class="submenu-item" href="catalog.html">Моноподы для селфи</a></li>
-  						<li><a class="submenu-item" href="#">Умные часы</a></li>
-  						<li><a class="submenu-item" href="#">Экшн-камеры</a></li>
+  						<li><a class="submenu-link" href="#">Виртульная реальность</a></li>
+  						<li><a class="submenu-link" href="#">Фитнес браслеты</a></li>
+  						<li><a class="submenu-link" href="#">Квадрокоптеры</a></li>
+  						<li><a class="submenu-link" href="catalog.html">Моноподы для селфи</a></li>
+  						<li><a class="submenu-link" href="#">Умные часы</a></li>
+  						<li><a class="submenu-link" href="#">Экшн-камеры</a></li>
   					</ul>
   				</li>
-  				<li><a class="menu" href="#">Доставка</a></li>
-  				<li><a class="menu" href="#">Гарантия</a></li>
-  				<li><a class="menu" href="#">Контакты</a></li>
+  				<li><a class="site-menu-link" href="#">Доставка</a></li>
+  				<li><a class="site-menu-link" href="#">Гарантия</a></li>
+  				<li><a class="site-menu-link" href="#">Контакты</a></li>
   			</ul>
   		</nav>
   	</header>
@@ -157,7 +159,7 @@
   		</section>
   	</main>
   	<footer class="main-footer">
-  		<p><a class="logo-title">Device</a></p>
+  		<a class="logo-title"><img src="img/logo.png" width="164" height="36" alt="Логотип компании Device"></a>
   		<ul class="footer-user-navigation">
   				<li><a class="footer-login-link" href="#">Войти</a></li>
   				<li><a class="footer-compare" href="#">Сравнить</a></li>

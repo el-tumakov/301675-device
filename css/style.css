@@ -33,3 +33,98 @@
 		local("Open Sans "),
 		url("/fonts/opensans.woff2") format("woff2");
 }
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 300;
+	letter-spacing: 0.01em;
+	color: #464646;
+
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-header {
+	background-color: #f7e296;
+}
+
+.main-navigation {
+	line-height: 36px;
+	color: black;
+}
+
+.user-menu,
+.site-menu,
+.submenu {
+	list-style: none;
+}
+
+.user-menu-link,
+.site-menu-link,
+.submenu-link {
+	color: #000000;
+}
+
+.user-menu-link:hover,
+.site-menu-link:hover,
+.submenu-link:hover {
+	opacity: 0.6;
+}
+
+.user-menu-link:active,
+.site-menu-link:active,
+.submenu-link:active {
+	opacity: 0.3;
+}
+
+.slider-title {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 47px;
+	line-height: auto;
+	font-weight: 700;
+	color: #000000;
+}
+
+.button {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: auto;
+	font-weight: 700;
+	letter-spacing: 0.2em;
+	color: #000000;
+}
+
+.slider-table-features {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 36px;
+	line-height: auto;
+	font-weight: normal;
+	color: #000000;
+}
+
+.slider-table-title th {
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 20px;
+}
