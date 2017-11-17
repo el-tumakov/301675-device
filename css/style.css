@@ -53,10 +53,10 @@ body {
 
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
-	font-weight: 300;
 	line-height: 30px;
 	letter-spacing: 0.01em;
 	color: #464646;
+	font-weight: 300;
 
 	background-color: #ffffff;
 }
@@ -99,10 +99,29 @@ a {
 }
 
 .button-search {
+	font: inherit;
+	line-height: 36px;
+	color: #000000;
+
+	background-color: transparent;
+	border: 2px solid #000000;
+}
+
+.button-search:hover {
+	color: #ffffff;
+
+	background-color: #000000;
+}
+
+.button-search:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.button-search {
 	display: none;
 }
-/*Не понимаю, почему не появляется кнопка*/
-.search input:focus .button-search {
+
+.search input:focus + .button-search {
 	display: block;
 }
 
@@ -110,6 +129,10 @@ a {
 .site-menu,
 .submenu {
 	list-style: none;
+}
+
+.login-out {
+	opacity: 0.3;
 }
 
 .site-menu-link {
@@ -140,23 +163,43 @@ a {
 	opacity: 0.3;
 }
 
+.page-title,
 .slider-title,
 .service-title,
 .about-title {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 47px;
-	font-weight: 700;
 	line-height: auto;
 	color: #000000;
+	font-weight: 700;
+}
+
+.breadcrumbs {
+	list-style: none;
+}
+
+.breadcrumbs a {
+	font-size: 14px;
+	line-height: 36px;
+	color: rgba(0, 0, 0, 0.3);
+	font-weight: 300;
+}
+
+.breadcrumbs a:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+	color: rgba(0, 0, 0, 0.1);
 }
 
 .button {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
-	font-weight: 700;
 	line-height: auto;
 	letter-spacing: 0.2em;
 	color: #000000;
+	font-weight: 700;
 }
 
 .button:active {
@@ -166,15 +209,174 @@ a {
 .slider-table-features {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 36px;
-	font-weight: normal;
 	line-height: auto;
 	color: #000000;
+	font-weight: normal;
 }
 
 .slider-table-title th {
 	font-size: 13px;
-	font-weight: 300;
 	line-height: 20px;
+	font-weight: 300;
+}
+
+.filter,
+.catalog-sort {
+	background-color: #efefef;
+}
+
+.box-title {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: auto;
+	letter-spacing: 0.2em;
+	color: #000000;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.filter .box-title {
+	background-color: #dbdbdb;
+}
+
+.filter-line {
+	height: 2px;
+
+	background-color: #000000;
+	border: none;
+}
+
+.filter-item {
+	border: 0;
+}
+
+.filter-item-title {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: auto;
+	color: #000000;
+	font-weight: 700;
+}
+
+.filter-label {
+	font: inherit;
+	font-size: 14px;
+	line-height: 40px;
+	color: #000000;
+	font-weight: 300;
+}
+
+.filter-input:disabled + .filter-label {
+	color: #a6a6a6;
+}
+
+.sort-list {
+	list-style: none;
+}
+
+.sort-list-link {
+	font-size: 14px;
+	line-height: 18px;
+	color: #000000;
+	font-weight: 300;
+	opacity: 0.3;
+}
+
+.sort-list-link:hover {
+	opacity: 0.6;
+}
+
+.sort-list-link:active {
+	opacity: 1;
+}
+
+.sort-ending {
+	opacity: 0.2;
+}
+
+.sort-ending:hover {
+	opacity: 0.4;
+}
+
+.sort-link-current {
+	opacity: 1;
+}
+
+.catalog-list {
+	list-style: none;
+}
+
+.catalog-item-title {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: auto;
+	color: #000000;
+	font-weight: 700;
+}
+
+.add-compare {
+	font-size: 13px;
+	line-height: 36px;
+	color: #000000;
+	font-weight: 300;
+	opacity: 0.5;
+}
+
+.add-compare:hover {
+	opacity: 1;
+}
+
+.add-compare:active {
+	opacity: 0.2;
+}
+
+.catalog-item-price {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: auto;
+	color: #464646;
+	font-weight: normal;
+}
+
+.pagination-list {
+	list-style: none;
+
+	background-color: #ebebeb;
+}
+
+.pagination-number,
+.pagination-button {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: auto;
+	letter-spacing: 0.2em;
+	color: rgba(0, 0, 0, 0.3);
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.pagination-item-current {
+	color: #000000;
+}
+
+.pagination-number:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination-number:active {
+	color: #000000;
+}
+
+.pagination-button {
+	color: #000000;
+}
+
+.pagination-button:hover {
+	background-color: #d9d9d9;
+}
+
+.pagination-button:active {
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .popular-list {
@@ -184,9 +386,9 @@ a {
 .popular-item {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
-	font-weight: 700;
 	line-height: auto;
 	color: #000000;
+	font-weight: 700;
 }
 
 .popular-item:active {
@@ -211,9 +413,9 @@ a {
 .transport-list {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 16px;
-	font-weight: 700;
 	line-height: 40px;
 	color: #000000;
+	font-weight: 700;
 }
 
 .main-footer {
@@ -233,6 +435,10 @@ a {
 .footer-menu a,
 .footer-social a {
 	color: #ffffff;
+}
+
+.footer-user-menu .footer-login-link {
+	opacity: 0.3;
 }
 
 .footer-user-menu a {
@@ -271,8 +477,8 @@ a {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 18px;
-	font-weight: 700;
 	color: #000000; 
+	font-weight: 700;
 }
 
 .write-us-form input,
@@ -280,13 +486,12 @@ a {
 	font: inherit;
 	font-size: 14px;
 	line-height: 18px;
-	font-weight: normal;
 	letter-spacing: auto;
+	font-weight: normal;
 	opacity: 0.4;
 
-	border: 0;
 	background-color: rgba(229, 229, 229, 0.5);
-	
+	border: 0;
 }
 
 .write-us-form input:hover,
@@ -296,11 +501,17 @@ a {
 
 .write-us-form input:focus,
 .write-us-form textarea:focus {
-	outline: 3px solid rgba(240, 194, 46, 0.5);
 	background-color: rgba(255, 255, 255, 0.5);
+	outline: 3px solid rgba(240, 194, 46, 0.5);
 }
 
 .write-us-form input:invalid,
 .write-us-form textarea:invalid {
 	background-color: rgba(237, 181, 181, 0.5);
+}
+
+.button[type="submit"],
+.popup-close {
+	background-color: transparent;
+	border: 0;
 }
