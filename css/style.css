@@ -35,16 +35,22 @@
 }
 
 .visually-hidden {
-  position: absolute;
+	position: absolute;
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
 
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+html,
+body {
+	width: 100%;
+	min-height: 2795px;
 }
 
 body {
@@ -65,8 +71,33 @@ a {
 	text-decoration: none;
 }
 
+.container {
+	width: 1160px;
+	margin: 0 auto;
+}
+
 .main-header {
+	min-height: 186px;
+	margin-top: 40px;
+
 	background-color: #f7e296;
+}
+
+.main-navigation {
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	line-height: 36px;
+	color: black;
+}
+
+.main-header .logo-title {
+	position: absolute;
+	top: -18px;
+	left: 60px;
 }
 
 .logo-title:hover {
@@ -77,12 +108,32 @@ a {
 	opacity: 0.3;
 }
 
-.main-navigation {
+.search-wrap {
+	display: flex;
+	align-items: center;
+	width: 440px;
+	min-height: 93px;
+}
+/*Тут не уверен на счет реализации иконки*/
+.search::before {
+	content: "";
+
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 20px;
+	margin-left: 3px;
+	padding: 0
+
 	line-height: 36px;
-	color: black;
+
+	background-image: url("../img/search.svg");
+	background-repeat: no-repeat;
 }
 
 .search input {
+	width: 330px;
+
 	font: inherit;
 
 	background-color: transparent;
@@ -99,6 +150,7 @@ a {
 }
 
 .button-search {
+	display: none;
 	font: inherit;
 	line-height: 36px;
 	color: #000000;
@@ -117,12 +169,8 @@ a {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-.button-search {
-	display: none;
-}
-
 .search input:focus + .button-search {
-	display: block;
+	display: inline-block;
 }
 
 .user-menu,
@@ -131,8 +179,51 @@ a {
 	list-style: none;
 }
 
+.user-menu {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	width: 600px;
+	min-height: 93px;
+	margin: 0;
+	padding: 0;
+
+	outline: 1px solid green;
+}
+
 .login-out {
 	opacity: 0.3;
+}
+
+.site-menu {
+	display: flex;
+	align-items: center;
+	flex-basis: 1040px;
+
+	width: 1040px;
+	min-height: 93px;
+	margin: 0;
+	padding: 0;
+
+	outline: 1px solid red;
+}
+
+.site-menu-catalog {
+	position: relative;
+}
+
+.site-menu-catalog .submenu {
+	position: absolute;
+	left: -60px;	
+
+	display: none;
+	flex-direction: column;
+	width: 1160px;
+	min-height: 129px;
+	padding: 0;
+
+	background-color: #f7e296;
 }
 
 .site-menu-link {
@@ -161,6 +252,10 @@ a {
 .site-menu-link:active,
 .submenu-link:active {
 	opacity: 0.3;
+}
+
+.site-menu-catalog:hover .submenu {
+	display: flex;
 }
 
 .page-title,
