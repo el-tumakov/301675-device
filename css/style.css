@@ -79,7 +79,9 @@ a {
 .main-header {
 	min-height: 186px;
 	margin-top: 40px;
+}
 
+.main-header .container {
 	background-color: #f7e296;
 }
 
@@ -299,14 +301,6 @@ a {
 
 .slider-radio-quadcopter {
 	left: 1041px;
-}
-
-.slider-fitness {
-	display: none;
-}
-
-.slider-quadcopter {
-	display: none;
 }
 
 .slider-selfie-img {
@@ -587,13 +581,8 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.popular-list {
-	list-style: none;
-}
-
 .popular {
-	width: 1160px;
-	min-height: 322px;
+	min-height: 422px;
 }
 
 .popular-list {
@@ -601,6 +590,8 @@ a {
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;
+
+	list-style: none;
 }
 
 .popular-list li {
@@ -619,7 +610,7 @@ a {
 	content: "";
 	display: block;
 	height: 160px;
-	margin-bottom: 17px;
+	margin-bottom: 34px;
 
 	background-color: #f7e296;
 	background-repeat: no-repeat;
@@ -655,11 +646,61 @@ a {
 }
 
 .service {
+	min-height: 288px;
+
 	background-color: #e5e5e5;
 }
 
-.service-list {
-	list-style: none;
+.service-wrap {
+	position: relative;
+	top: -10px;
+	left: 0;
+
+	display: flex;
+	flex-direction: column;
+	width: 280px;
+	margin: 0 120px 0 0;
+	padding: 0;
+}
+
+.service-wrap .button {
+	margin-bottom: 40px;
+
+	text-transform: uppercase;
+
+	cursor: pointer;
+}
+
+.service-title {
+	margin: 0;
+}
+
+.service-text {
+	margin-top: 25px;
+}
+
+.delivery,
+.warrantly,
+.credit {
+	position: absolute;
+	top: -14px;
+	left: 400px;
+	width: 430px;
+}
+
+.delivery-radio:checked ~ .delivery,
+.warrantly-radio:checked ~ .warrantly,
+.credit-radio:checked ~ .credit {
+	opacity: 1;
+}
+
+.delivery-radio:checked ~ .warrantly,
+.delivery-radio:checked ~ .credit,
+.warrantly-radio:checked ~ .delivery,
+.warrantly-radio:checked ~ .credit,
+.credit-radio:checked ~ .delivery,
+.credit-radio:checked ~ .warrantly {
+	opacity: 0;
 }
 
 .brands-list {
