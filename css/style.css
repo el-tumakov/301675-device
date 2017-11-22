@@ -87,8 +87,8 @@ a {
 	position: relative;
 
 	display: flex;
-	justify-content: center;
 	flex-wrap: wrap;
+	justify-content: center;
 
 	line-height: 36px;
 	color: black;
@@ -114,7 +114,7 @@ a {
 	width: 440px;
 	min-height: 93px;
 }
-/*Тут не уверен на счет реализации иконки*/
+/*Тут не уверен на счет реализации иконки, ну это еще потом я так понимаю разберем*/
 .search::before {
 	content: "";
 
@@ -123,7 +123,7 @@ a {
 	height: 16px;
 	margin-right: 20px;
 	margin-left: 3px;
-	padding: 0
+	padding: 0;
 
 	line-height: 36px;
 
@@ -183,13 +183,10 @@ a {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-
 	width: 600px;
 	min-height: 93px;
 	margin: 0;
 	padding: 0;
-
-	outline: 1px solid green;
 }
 
 .login-out {
@@ -200,13 +197,10 @@ a {
 	display: flex;
 	align-items: center;
 	flex-basis: 1040px;
-
 	width: 1040px;
 	min-height: 93px;
 	margin: 0;
 	padding: 0;
-
-	outline: 1px solid red;
 }
 
 .site-menu-catalog {
@@ -229,7 +223,7 @@ a {
 .site-menu-link {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
-	line-height: auto;
+	line-height: 1.2;
 	letter-spacing: 0.2em;
 	color: #000000;
 	font-weight: 700;
@@ -255,7 +249,9 @@ a {
 }
 
 .site-menu-catalog:hover .submenu {
-	display: flex;
+	z-index: 1;
+
+	display: inherit;
 }
 
 .page-title,
@@ -264,9 +260,140 @@ a {
 .about-title {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 47px;
-	line-height: auto;
+	line-height: 1.2;
 	color: #000000;
 	font-weight: 700;
+}
+
+.slider {
+	position: relative;
+
+	width: 1160px;
+	min-height: 610px;
+}
+
+.slider-top {
+	min-height: 129px;
+
+	background-color: #f7e296;
+}
+
+.slider-radio-selfie,
+.slider-radio-fitness,
+.slider-radio-quadcopter {
+	position: absolute;
+	top: 345px;
+	z-index: 1;
+
+	width: 12px;
+	height: 12px;
+}
+
+.slider-radio-selfie {
+	left: 999px;
+}
+
+.slider-radio-fitness {
+	left: 1020px;
+}
+
+.slider-radio-quadcopter {
+	left: 1041px;
+}
+
+.slider-fitness {
+	display: none;
+}
+
+.slider-quadcopter {
+	display: none;
+}
+
+.slider-selfie-img {
+	position: absolute;
+	top: 22px;
+	left: 88px;
+}
+
+.slider-fitness-img {
+	position: absolute;
+	top: 30px;
+	left: 116px;
+}
+
+.slider-quadcopter-img {
+	position: absolute;
+	top: 83px;
+	left: 31px;
+}
+
+.slider-content {
+	position: absolute;
+	top: 97px;
+	left: 600px;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: flex-start;	
+	width: 496px;
+	min-height: 396px;
+}
+
+.slider-title {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.slider-description {
+	width: 481px;
+	margin-top: 32px;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.slider-more {
+	margin-top: 35px;
+	margin-right: auto;
+	magin-left: 0;
+}
+
+.slider-table {
+	margin-top: auto;
+	margin-bottom: 0;
+}
+
+.slider-table-features {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 36px;
+	line-height: 1.2;
+	color: #000000;
+	font-weight: normal;
+}
+
+
+.slider-table-title th {
+	font-size: 13px;
+	line-height: 20px;
+	font-weight: 300;
+	text-align: left;
+
+	padding-right: 80px;
+}
+
+.slider-radio-selfie:checked ~ .slider-selfie,
+.slider-radio-fitness:checked ~ .slider-fitness,
+.slider-radio-quadcopter:checked ~ .slider-quadcopter {
+	display: block;
+}
+
+.slider-radio-selfie:checked ~ .slider-fitness,
+.slider-radio-selfie:checked ~ .slider-quadcopter,
+.slider-radio-fitness:checked ~ .slider-selfie,
+.slider-radio-fitness:checked ~ .slider-quadcopter,
+.slider-radio-quadcopter:checked ~ .slider-selfie,
+.slider-radio-quadcopter:checked ~ .slider-fitness {
+	display: none;
 }
 
 .breadcrumbs {
@@ -291,7 +418,7 @@ a {
 .button {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
-	line-height: auto;
+	line-height: 1.2;
 	letter-spacing: 0.2em;
 	color: #000000;
 	font-weight: 700;
@@ -299,20 +426,6 @@ a {
 
 .button:active {
 	opacity: 0.3;
-}
-
-.slider-table-features {
-	font-family: "Gilroy", "Arial", sans-serif;
-	font-size: 36px;
-	line-height: auto;
-	color: #000000;
-	font-weight: normal;
-}
-
-.slider-table-title th {
-	font-size: 13px;
-	line-height: 20px;
-	font-weight: 300;
 }
 
 .filter,
@@ -323,7 +436,7 @@ a {
 .box-title {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 16px;
-	line-height: auto;
+	line-height: 1.2;
 	letter-spacing: 0.2em;
 	color: #000000;
 	font-weight: 700;
@@ -348,7 +461,7 @@ a {
 .filter-item-title {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
-	line-height: auto;
+	line-height: 1.2;
 	color: #000000;
 	font-weight: 700;
 }
@@ -404,7 +517,7 @@ a {
 .catalog-item-title {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
-	line-height: auto;
+	line-height: 1.2;
 	color: #000000;
 	font-weight: 700;
 }
@@ -428,7 +541,7 @@ a {
 .catalog-item-price {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 16px;
-	line-height: auto;
+	line-height: 1.2;
 	color: #464646;
 	font-weight: normal;
 }
@@ -443,7 +556,7 @@ a {
 .pagination-button {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 16px;
-	line-height: auto;
+	line-height: 1.2;
 	letter-spacing: 0.2em;
 	color: rgba(0, 0, 0, 0.3);
 	font-weight: 700;
@@ -478,12 +591,63 @@ a {
 	list-style: none;
 }
 
+.popular {
+	width: 1160px;
+	min-height: 322px;
+}
+
+.popular-list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+}
+
+.popular-list li {
+	width: 160px;
+}
+
 .popular-item {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
-	line-height: auto;
+	line-height: 1.2;
 	color: #000000;
 	font-weight: 700;
+}
+
+.popular-item::before {
+	content: "";
+	display: block;
+	height: 160px;
+	margin-bottom: 17px;
+
+	background-color: #f7e296;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.popular-vr::before {
+	background-image: url("../img/popular-1.svg");
+}
+
+.popular-selfie::before {
+	background-image: url("../img/popular-2.svg");
+}
+
+.popular-camera::before {
+	background-image: url("../img/popular-3.svg");
+}
+
+.popular-fitness::before {
+	background-image: url("../img/popular-4.svg");
+}
+
+.popular-watch::before {
+	background-image: url("../img/popular-5.svg");
+}
+
+.popular-quadcopter::before {
+	background-image: url("../img/popular-6.svg");
 }
 
 .popular-item:active {

@@ -47,75 +47,89 @@
   	<main class="container">
   		<h1 class="visually-hidden">Магазин электронных товаров Device</h1>
   		<section class="slider">
-  			<div class="slider-wrap">
-  				<h2 class="visually-hidden">Монопод для селфи</h2>
-  				<img src="img/slider-1.png" width="384" height="486" alt="Монопод для селфи">
-  				<p class="slider-title">Делай селфи, как Бен Стиллер!</p>
-  				<p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом 5 килограмм.</p>
-  				<a class="button" href="#">Подробнее</a>
-  				<table class="slider-table">
-  					<tr class="slider-table-features">
-  						<td>8,5 м</td>
-  						<td>5 кг</td>
-  						<td>Карбон</td>
-  					</tr>
-  					<tr class="slider-table-title">
-  						<th>Длина палки</th>
-  						<th>Вес палки</th>
-  						<th>Материал</th>
-  					</tr>
-  				</table>
-  			</div>
-  			<div class="slider-wrap">
-  				<h2 class="visually-hidden">Фитнесбраслет</h2>
-  				<img src="img/slider-2.png" width="345" height="485" alt="Фитнесбраслет">
-  				<p class="slider-title">Худеем правильно!</p>
-  				<p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-  				<a class="button" href="#">Подробнее</a>
-  				<table class="slider-table">
-  					<tr class="slider-table-features">
-  						<td>48 часов</td>
-  					</tr>
-  					<tr class="slider-table-title">
-  						<th>Без подзарядки</th>
-  					</tr>
-  				</table>
-  			</div>
-  			<div class="slider-wrap">
+  			<div class="slider-top"></div>
+  			<label class="visually-hidden" for="selfie">Монопод для селфи</label>
+  			<input id="selfie" class="slider-radio-selfie" type="radio" name="slider-radio" checked>
+  			<label class="visually-hidden" for="fitness">Фитнесбраслет</label>
+  			<input id="fitness" class="slider-radio-fitness" type="radio" name="slider-radio">
+  			<label class="visually-hidden" for="quadrupter">Квадрокоптер</label>
+  			<input id="quadrupter" class="slider-radio-quadcopter" type="radio" name="slider-radio">
+  			<!-- <button class="slider-radio slider-radio-selfie" type="button"></button>
+		  	<button class="slider-radio slider-radio-fitness" type="button"></button>
+		  	<button class="slider-radio slider-radio-quadcopter" type="button"></button> -->
+  			<div class="slider-selfie">
+	  			<h2 class="visually-hidden">Монопод для селфи</h2>
+	  			<div class="slider-selfie-img">
+	  				<img src="img/slider-1.png" width="384" height="486" alt="Монопод для селфи">
+	  			</div>
+	  			<div class="slider-content">
+		 				<p class="slider-title">Делай селфи, <br>как Бен Стиллер!</p>
+		 				<p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+		  			<a class="button slider-more" href="#">Подробнее</a>
+	  				<table class="slider-table">
+	  					<tr class="slider-table-features">
+	  						<td>8,5 м</td>
+	  						<td>5 кг</td>
+	  						<td>Карбон</td>
+	  					</tr>
+	  					<tr class="slider-table-title">
+	  						<th>Длина палки</th>
+	  						<th>Вес палки</th>
+	  						<th>Материал</th>
+	  					</tr>
+	  				</table>
+	  			</div>
+	  		</div>
+  			<div class="slider-fitness">
+	  			<h2 class="visually-hidden">Фитнесбраслет</h2>
+	  			<div class="slider-fitness-img">
+	  				<img src="img/slider-2.png" width="345" height="485" alt="Фитнесбраслет">
+	  			</div>
+	  			<div class="slider-content">
+	  				<p class="slider-title">Худеем <br>правильно!</p>
+	  				<p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>не пропускать занятия и соблюдать диету.</p>
+	  				<a class="button slider-more" href="#">Подробнее</a>
+	  				<table class="slider-table">
+	  					<tr class="slider-table-features">
+	  						<td>48 часов</td>
+	  					</tr>
+	  					<tr class="slider-table-title">
+	  						<th>Без подзарядки</th>
+	  					</tr>
+	  				</table>
+	  			</div>
+	  		</div>
+  			<div class="slider-quadcopter">
   				<h2 class="visually-hidden">Квадрокоптер</h2>
-  				<img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
-  				<p class="slider-title">Пархает как бабочка, жалит как пчела!</p>
-  				<p class="slider-description">Этот обычный, на первый взгляд, оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-  				<a class="button" href="#">Подробнее</a>
-  				<table class="slider-table">
-  					<tr class="slider-table-features">
-  						<td>800 м</td>
-  						<td>50 м</td>
-  					</tr>
-  					<tr class="slider-table-title">
-  						<th>Дальность полета</th>
-  						<th>Радиус поражения</th>
-  					</tr>
-  				</table>
-  				<form class="slider-radio" action="https://echo.htmlacademy.ru" method="post">
-  					<label class="visually-hidden" for="selfie">Монопод для селфи</label>
-  					<input id="selfie" class="slider-radio-item" type="radio" name="slider-radio" value="" checked>
-  					<label class="visually-hidden" for="fitness">Фитнесбраслет</label>
-  					<input id="fitness" class="slider-radio-item" type="radio" name="slider-radio" value="">
-  					<label class="visually-hidden" for="quadrupter">Квадрокоптер</label>
-  					<input id="quadrupter" class="slider-radio-item" type="radio" name="slider-radio" value="">
-  				</form>
+  				<div class="slider-quadcopter-img">
+  					<img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
+  				</div>
+  				<div class="slider-content">
+  					<p class="slider-title">Пархает как бабочка, жалит как пчела!</p>
+  					<p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен <br>мощным лазером, замаскированным под стандартную камеру.</p>
+  					<a class="button slider-more" href="#">Подробнее</a>
+  					<table class="slider-table">
+  						<tr class="slider-table-features">
+  							<td>800 м</td>
+  							<td>50 м</td>
+  						</tr>
+  						<tr class="slider-table-title">
+  							<th>Дальность полета</th>
+  							<th>Радиус поражения</th>
+  						</tr>
+  					</table>
+  				</div>
   			</div>
   		</section>
   		<section class="popular">
   			<h2 class="visually-hidden">Популярные товары</h2>
   			<ul class="popular-list">
-  				<li><a class="popular-item vr" href="#">Виртульная реальность</a></li>
-  				<li><a class="popular-item selfie" href="#">Моноподы для селфи</a></li>
-  				<li><a class="popular-item camera" href="#">Экшн-камеры</a></li>
-  				<li><a class="popular-item fitness" href="#">Фитнес-браслеты</a></li>
-  				<li><a class="popular-item watch" href="#">Умные часы</a></li>
-  				<li><a class="popular-item quadrupter" href="#">Квадрокоптеры</a></li>
+  				<a class="popular-item popular-vr" href="#"><li>Виртульная реальность</li></a>
+  				<a class="popular-item popular-selfie" href="#"><li>Моноподы для селфи</li></a>
+  				<a class="popular-item popular-camera" href="#"><li>Экшн-камеры</li></a>
+  				<a class="popular-item popular-fitness" href="#"><li>Фитнес-браслеты</li></a>
+  				<a class="popular-item popular-watch" href="#"><li>Умные часы</li></a>
+  				<a class="popular-item popular-quadcopter" href="#"><li>Квадрокоптеры</li></a>
   			</ul>
   		</section>
   		<section class="service">
