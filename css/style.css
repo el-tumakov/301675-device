@@ -686,7 +686,7 @@ a {
 .warrantly,
 .credit {
 	position: absolute;
-	top: -14px;
+	top: -20px;
 	left: 400px;
 	width: 430px;
 }
@@ -806,6 +806,19 @@ a {
 
 	background-color: #464646;
 	
+}
+
+.footer-top,
+.footer-middle,
+.footer-bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-top {
+	
+	outline: 1px solid red;
 }
 
 .footer-user-menu,
