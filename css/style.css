@@ -259,7 +259,7 @@ a {
 .page-title,
 .slider-title,
 .service-title,
-.about-title {
+.info-title {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 47px;
 	line-height: 1.2;
@@ -743,12 +743,62 @@ a {
 	opacity: 1;
 }
 
+.info {
+	display: flex;
+	min-height: 567px;
+	margin-bottom: 88px;
+}
+
+.about,
+.contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.about {
+	width: 600px;
+}
+
+.contacts {
+	width: 560px;
+}
+
+.info-title {
+	margin-top: 0;
+	margin-bottom: 39px;
+}
+
+.about .info-text {
+	width: 485px;
+}
+
+.info-text {
+	margin-top: 0;
+	margin-bottom: 34px;
+}
+
+
+.info-button {
+	margin-top: auto;
+	margin-bottom: 0;
+}
+
 .transport-list {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 15px;
+	padding-left: 0;
+
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 40px;
 	color: #000000;
 	font-weight: 700;
+}
+
+.transport-list li {
+	padding-left: 35px;
 }
 
 .main-footer {
