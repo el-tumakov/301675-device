@@ -416,6 +416,8 @@ a {
 	letter-spacing: 0.2em;
 	color: #000000;
 	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 .button:active {
@@ -664,6 +666,7 @@ a {
 }
 
 .service-wrap .button {
+	width: 160px;
 	margin-bottom: 40px;
 
 	text-transform: uppercase;
@@ -703,12 +706,42 @@ a {
 	opacity: 0;
 }
 
+.brands {
+	display: flex;
+	justify-content: center;
+	min-height: 287px;
+}
+
 .brands-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1160px;
+	padding: 0;
+
 	list-style: none;
 }
 
-/*Менять логотипы брендов при наведении буду с помощью абсолютного позиционирования.
-Размещу их друг под другом в html коде и буду изменять прозрачность при наведении.*/
+.brands-item {
+	width: 260px;
+	height: 100px;
+}
+
+.brands-link {
+	position: relative;
+}
+
+.brands-img {
+	position: absolute;
+}
+
+.brands-img:last-child {
+	opacity: 0;
+}
+
+.brands-item:hover .brands-img:last-child {
+	opacity: 1;
+}
 
 .transport-list {
 	font-family: "Gilroy", "Arial", sans-serif;
