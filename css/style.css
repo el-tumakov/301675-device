@@ -121,7 +121,7 @@ a {
 	width: 440px;
 	min-height: 93px;
 }
-/*Тут не уверен на счет реализации иконки*/
+
 .search::before {
 	content: "";
 
@@ -354,7 +354,6 @@ a {
 .slider-more {
 	margin-top: 35px;
 	margin-right: auto;
-	magin-left: 0;
 }
 
 .slider-table {
@@ -454,6 +453,7 @@ a {
 .catalog-wrap {
 	display: flex;
 	justify-content: center;
+	min-height: 1287px;
 }
 
 .grey-background {
@@ -686,7 +686,19 @@ a {
 	font-weight: normal;
 }
 
+.pagination {
+	margin-top: 35px;
+	margin-left: 72px;
+}
+
 .pagination-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	min-height: 70px;
+
 	list-style: none;
 
 	background-color: #ebebeb;
