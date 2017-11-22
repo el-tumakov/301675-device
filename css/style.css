@@ -76,6 +76,11 @@ a {
 	margin: 0 auto;
 }
 
+.content-container {
+	width: 1040px;
+	margin: 0 auto;
+}
+
 .main-header {
 	min-height: 186px;
 	margin-top: 40px;
@@ -390,7 +395,17 @@ a {
 	display: none;
 }
 
+.page-title {
+	margin-top: 32px;
+	margin-bottom: 0;
+}
+
 .breadcrumbs {
+	display: flex;
+	margin-top: 14px;
+	margin-bottom: 0;
+	padding: 0;
+
 	list-style: none;
 }
 
@@ -424,12 +439,70 @@ a {
 	opacity: 0.3;
 }
 
+.catalog-wrap {
+	display: flex;
+	justify-content: center;
+	width: 1040px;
+	margin: 40px auto 0 auto;
+	outline: 1px solid red;
+}
+
+.filter {
+	display: flex;
+	flex-direction: column;
+	width: 268px;
+}
+
+.filter-title-wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 70px;
+
+	background-color: #dbdbdb;
+}
+
+.filter-price {
+	width: 200px;
+	min-height: 140px;
+	margin-top: 69px;
+}
+
+.filter-color {
+	width: 200px;
+	min-height: 285px;
+}
+
+.filter-bluetooth {
+	width: 200px;
+	min-height: 126px;
+}
+
+.filter-button {
+	margin-top: 47px;
+}
+
+.catalog {
+	display: flex;
+	flex-direction: column;
+	width: 832px;
+}
+
+.catalog-sort {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 70px;
+}
+
 .filter,
 .catalog-sort {
 	background-color: #efefef;
 }
 
 .box-title {
+	margin: 0;
+
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 1.2;
@@ -439,18 +512,19 @@ a {
 	text-transform: uppercase;
 }
 
-.filter .box-title {
-	background-color: #dbdbdb;
-}
-
 .filter-line {
 	height: 2px;
+	margin: 0;
 
 	background-color: #000000;
 	border: none;
 }
 
 .filter-item {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+
 	border: 0;
 }
 
@@ -475,6 +549,10 @@ a {
 }
 
 .sort-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 
