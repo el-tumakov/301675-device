@@ -116,7 +116,7 @@ a {
 	width: 440px;
 	min-height: 93px;
 }
-/*Тут не уверен на счет реализации иконки, ну это еще потом я так понимаю разберем*/
+/*Тут не уверен на счет реализации иконки*/
 .search::before {
 	content: "";
 
@@ -802,23 +802,92 @@ a {
 }
 
 .main-footer {
+	min-height: 323px;
+
 	color: #ffffff;
 
 	background-color: #464646;
 	
 }
 
-.footer-top,
-.footer-middle,
-.footer-bottom {
+.main-footer .container {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	align-items: center;
 }
 
-.footer-top {
-	
-	outline: 1px solid red;
+.footer-left,
+.footer-middle,
+.footer-right {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	min-height: 257px;
+}
+
+.footer-left {
+	width: 210px;
+}
+
+.footer-left .logo-title {
+	margin-top: 66px;
+}
+
+.footer-contacts {
+	margin-top: 22px;
+}
+
+.footer-middle {
+	width: 440px;
+}
+
+.footer-menu {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	margin-top: 130px;
+	margin-bottom: 0;
+	padding: 0;
+
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 1.2;
+	letter-spacing: 0.2em;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.footer-social {
+	display: flex;
+	justify-content: space-around;
+	min-width: 160px;
+	min-height: 32px;
+	margin-top: auto;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.footer-right {
+	justify-content: flex-start;
+	align-items: flex-end;
+	width: 360px;
+}
+
+.footer-user-menu {
+	display: flex;
+	margin-top: 63px;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.footer-phone {
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+
+.copyright {
+	margin-top: auto;
+	margin-bottom: 0;
 }
 
 .footer-user-menu,
@@ -830,6 +899,7 @@ a {
 .footer-user-menu a,
 .footer-menu a,
 .footer-social a {
+	line-height: 36px;
 	color: #ffffff;
 }
 
