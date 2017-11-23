@@ -48,16 +48,9 @@
   		<div class="container">
 	  		<h1 class="visually-hidden">Магазин электронных товаров Device</h1>
 	  		<section class="slider">
-	  			<div class="slider-top"></div>
-	  			<label class="visually-hidden" for="selfie">Монопод для селфи</label>
-	  			<input id="selfie" class="slider-radio-selfie" type="radio" name="slider-radio" checked>
-	  			<label class="visually-hidden" for="fitness">Фитнесбраслет</label>
-	  			<input id="fitness" class="slider-radio-fitness" type="radio" name="slider-radio">
-	  			<label class="visually-hidden" for="quadrupter">Квадрокоптер</label>
-	  			<input id="quadrupter" class="slider-radio-quadcopter" type="radio" name="slider-radio">
-	  			<div class="slider-selfie">
+	  			<div class="slider-wrap slider-selfie">
 		  			<h2 class="visually-hidden">Монопод для селфи</h2>
-		  			<div class="slider-selfie-img">
+		  			<div class="slider-img slider-selfie-img">
 		  				<img src="img/slider-1.png" width="384" height="486" alt="Монопод для селфи">
 		  			</div>
 		  			<div class="slider-content">
@@ -78,9 +71,9 @@
 		  				</table>
 		  			</div>
 		  		</div>
-	  			<div class="slider-fitness">
+	  			<div class="slider-wrap slider-fitness">
 		  			<h2 class="visually-hidden">Фитнесбраслет</h2>
-		  			<div class="slider-fitness-img">
+		  			<div class="slider-img slider-fitness-img">
 		  				<img src="img/slider-2.png" width="345" height="485" alt="Фитнесбраслет">
 		  			</div>
 		  			<div class="slider-content">
@@ -97,9 +90,9 @@
 		  				</table>
 		  			</div>
 		  		</div>
-	  			<div class="slider-quadcopter">
+	  			<div class="slider-wrap slider-quadcopter">
 	  				<h2 class="visually-hidden">Квадрокоптер</h2>
-	  				<div class="slider-quadcopter-img">
+	  				<div class="slider-img slider-quadcopter-img">
 	  					<img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
 	  				</div>
 	  				<div class="slider-content">
@@ -135,24 +128,25 @@
 	  		<div class="container">
 		 			<h2 class="visually-hidden">Услуги</h2>
 		 			<div class="service-wrap">
-				 		<label class="button delivery-link" for="delivery">Доставка</label>
-				 		<input class="visually-hidden delivery-radio" id="delivery" type="radio" name="service-radio" checked>
-				 		<label class="button warrantly-link" for="warrantly">Гарантия</label>
-				 		<input class="visually-hidden warrantly-radio" id="warrantly" type="radio" name="service-radio">
-				 		<label class="button credit-link" for="credit">Кредит</label>
-				 		<input class="visually-hidden credit-radio" id="credit" type="radio" name="service-radio">
-				 		<div class="delivery">
-			  			<h3 class="service-title">Доставка</h3>
-			 				<p class="service-text">Мы с удовольствие доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-			 			</div>
-				  	<div class="warrantly">
-			 				<h3 class="service-title">Гарантия</h3>
-			 				<p class="service-text">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br>Товар, не дом, конечно же.</p>
-			 			</div>
-				  	<div class="credit">
-			 				<h3 class="service-title">Кредит</h3>
-			  			<p class="service-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-			  		</div>
+		 				<ul class="service-list">
+				 			<li><a class="button delivery-link" for="delivery">Доставка</a></li>
+				 			<li><a class="button warrantly-link" for="warrantly">Гарантия</a></li>
+				 			<li><a class="button credit-link" for="credit">Кредит</a></li>
+				 		</ul>
+				 		<div class="service-content">
+					 		<div class="delivery">
+				  			<h3 class="service-title">Доставка</h3>
+				 				<p class="service-text">Мы с удовольствие доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+				 			</div>
+					  	<div class="warrantly">
+				 				<h3 class="service-title">Гарантия</h3>
+				 				<p class="service-text">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br>Товар, не дом, конечно же.</p>
+				 			</div>
+					  	<div class="credit">
+				 				<h3 class="service-title">Кредит</h3>
+				  			<p class="service-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+				  		</div>
+				  	</div>
 			  	</div>
 		  	</div>
 			</section>
