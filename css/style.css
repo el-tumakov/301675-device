@@ -50,7 +50,6 @@
 html,
 body {
 	width: 100%;
-	min-height: 2795px;
 }
 
 body {
@@ -82,36 +81,47 @@ a {
 }
 
 .main-header {
-	min-height: 186px;
-	margin-top: 40px;
-}
-
-.main-header .container {
-	background-color: #f7e296;
+	margin-top: 24px;
 }
 
 .main-navigation {
-	position: relative;
-
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: flex-start;
+	min-height: 168px;
 
 	line-height: 36px;
 	color: black;
+
+	background-color: #f7e296;
 }
 
-.main-header .logo-title {
+.logo-title {
+	width: 164px;
+	height: 36px;
+	margin-left: 60px;
+}
+
+.logo-title::after {
+	content: "";
+
 	position: absolute;
-	top: -18px;
-	left: 60px;
+
+	width: 1160px;
+	height: 18px;
+	z-index: -1;
+	margin-top: -27px;
+	margin-left: -60px;
+
+	background-color: #f7e296;
 }
 
-.logo-title:hover {
+.logo-title a:hover {
 	opacity: 0.6;
 }
 
-.logo-title:active {
+.logo-title a:active {
 	opacity: 0.3;
 }
 
@@ -119,7 +129,7 @@ a {
 	display: flex;
 	align-items: center;
 	width: 440px;
-	min-height: 93px;
+	margin-top: 22px;
 }
 
 .search::before {
@@ -191,8 +201,8 @@ a {
 	justify-content: flex-end;
 	align-items: center;
 	width: 600px;
-	min-height: 93px;
-	margin: 0;
+	margin-top: 22px;
+	margin-bottom: 0;
 	padding: 0;
 }
 
@@ -205,7 +215,6 @@ a {
 	align-items: center;
 	flex-basis: 1040px;
 	width: 1040px;
-	min-height: 93px;
 	margin: 0;
 	padding: 0;
 }
