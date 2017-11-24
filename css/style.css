@@ -105,7 +105,7 @@ a {
 	margin-left: 60px;
 }
 
-.logo-title::after {
+.logo-title::before {
 	content: "";
 
 	position: absolute;
@@ -113,7 +113,7 @@ a {
 
 	width: 1160px;
 	height: 18px;
-	margin-top: -27px;
+	margin-top: 18px;
 	margin-left: -60px;
 
 	background-color: #f7e296;
