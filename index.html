@@ -150,11 +150,14 @@
 	  		<div class="container">
 		 			<h2 class="visually-hidden">Услуги</h2>
 		 			<div class="service-wrap">
-		 				<ul class="service-list">
-				 			<li><a class="button delivery-link" for="delivery">Доставка</a></li>
-				 			<li><a class="button warrantly-link" for="warrantly">Гарантия</a></li>
-				 			<li><a class="button credit-link" for="credit">Кредит</a></li>
-				 		</ul>
+		 				<input class="visually-hidden service-delivery-radio" type="radio" id="service-delivery" name="service-radio" checked>
+	  				<input class="visually-hidden service-warrantly-radio" type="radio" id="service-warrantly" name="service-radio">
+	  				<input class="visually-hidden service-credit-radio" type="radio" id="service-credit" name="service-radio">
+	  				<ul class="service-list">
+		  				<li class="service-delivery-item"><label class="button delivery-link" for="service-delivery">Доставка</label></li>
+	          	<li class="service-warrantly-item"><label class="button warrantly-link" for="service-warrantly">Гарантия</label></li>
+	          	<li class="service-credit-item"><label class="button credit-link" for="service-credit">Кредит</label></li>
+          	</ul>
 				 		<div class="service-content">
 					 		<div class="delivery">
 				  			<h3 class="service-title">Доставка</h3>

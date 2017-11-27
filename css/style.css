@@ -616,6 +616,10 @@ input[type="radio"].visually-hidden {
 	border-radius: 50%;
 }
 
+.slider-controls label:hover {
+	cursor: pointer;
+}
+
 .slider-controls label::before {
 	content: "";
 
@@ -1084,17 +1088,31 @@ input[type="radio"].visually-hidden {
 }
 
 .service-list {
+	position: relative;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-self: flex-start;
 	width: 280px;
 	min-height: 169px;
-	margin-top: 10px;
-	margin-bottom: 0;
+	margin: 10px 119px 0 1px;
 	padding: 0;
 
 	list-style: none;
+}
+
+.service-list::before {
+	content: "";
+
+	position: absolute;
+	top: -80px;
+	right: -3px;
+
+	width: 7px;
+	height: 319px;
+
+	background-color: #000000;
 }
 
 .service-list li {
@@ -1110,12 +1128,94 @@ input[type="radio"].visually-hidden {
 	cursor: pointer;
 }
 
-.service-content {
-	width: 500px;
+.service-delivery-radio:checked ~ .service-list .service-delivery-item,
+.service-warrantly-radio:checked ~ .service-list .service-warrantly-item,
+.service-credit-radio:checked ~ .service-list .service-credit-item {
+	background-color: #000000;
+}
+
+.service-delivery-radio:checked ~ .service-list .delivery-link,
+.service-warrantly-radio:checked ~ .service-list .warrantly-link,
+.service-credit-radio:checked ~ .service-list .credit-link {
+	color: #f7e184;
+
+	background-color: #000000;
+	background-image: none;
+	opacity: 1;
+}
+
+.service-list .button:active {
+	color: #f7e184;
+
+	background-color: #000000;
+	background-image: none;
+	opacity: 1;
+}
+
+.delivery,
+.warrantly,
+.credit {
+	position: relative;
+
+	display: none;
+	width: 700px;
+}
+
+.delivery::before {
+	content: "";
+
+	position: absolute;
+	top: 15px;
+	right: 6px;
+
+	width: 136px;
+	height: 164px;
+
+	background-image: url(../img/delivery.svg);
+	background-repeat: no-repeat;
+}
+
+.warrantly::before {
+	content: "";
+
+	position: absolute;
+	top: -9px;
+	right: -14px;
+
+	width: 171px;
+	height: 195px;
+
+	background-image: url(../img/warrantly.svg);
+	background-repeat: no-repeat;
+}
+
+.credit::before {
+	content: "";
+
+	position: absolute;
+	top: -9px;
+	right: 10px;
+
+	width: 156px;
+	height: 188px;
+
+	background-image: url(../img/credit.svg);
+	background-repeat: no-repeat;
 }
 
 .service-title {
 	margin: 0;
+}
+
+.service-text {
+	width: 435px;
+	margin-top: 26px;
+}
+
+.service-delivery-radio:checked ~ .service-content .delivery,
+.service-warrantly-radio:checked ~ .service-content .warrantly,
+.service-credit-radio:checked ~ .service-content .credit {
+	display: block;
 }
 
 .brands {
