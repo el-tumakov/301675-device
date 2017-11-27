@@ -418,7 +418,7 @@ input[type="radio"].visually-hidden {
 .slider {
 	position: relative;
 	width: 1160px;
-	min-height: 596px;
+	min-height: 508px;
 }
 
 .slider::before {
@@ -595,7 +595,7 @@ input[type="radio"].visually-hidden {
 
 .slider-controls {
 	position: absolute;
-	bottom: 255px;
+	bottom: 167px;
 	right: 83px;
 
 	display: flex;
@@ -991,8 +991,9 @@ input[type="radio"].visually-hidden {
 
 .popular-list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	margin: 0;
+	margin: 86px 0 0 0;
 	padding: 0;
 
 	list-style: none;
@@ -1014,7 +1015,7 @@ input[type="radio"].visually-hidden {
 	content: "";
 	display: block;
 	height: 160px;
-	margin-bottom: 34px;
+	margin-bottom: 30px;
 
 	background-color: #f7e296;
 	background-repeat: no-repeat;
@@ -1023,26 +1024,36 @@ input[type="radio"].visually-hidden {
 
 .popular-vr::before {
 	background-image: url("../img/popular-1.svg");
+	background-position: 31px 52px;
 }
 
 .popular-selfie::before {
 	background-image: url("../img/popular-2.svg");
+	background-position: 38px 41px;
 }
 
 .popular-camera::before {
 	background-image: url("../img/popular-3.svg");
+	background-position: 49px 38px;
 }
 
 .popular-fitness::before {
 	background-image: url("../img/popular-4.svg");
+	background-position: 28px 50px;
 }
 
 .popular-watch::before {
 	background-image: url("../img/popular-5.svg");
+	background-position: 55px 32px;
 }
 
 .popular-quadcopter::before {
 	background-image: url("../img/popular-6.svg");
+	background-position: 13px 49px;
+}
+
+.popular-item:hover::before {
+	background-color: #f0c52e;
 }
 
 .popular-item:active {
@@ -1353,7 +1364,6 @@ input[type="radio"].visually-hidden {
 	font: inherit;
 	font-size: 14px;
 	line-height: 18px;
-	letter-spacing: auto;
 	font-weight: normal;
 	opacity: 0.4;
 
@@ -1372,10 +1382,10 @@ input[type="radio"].visually-hidden {
 	outline: 3px solid rgba(240, 194, 46, 0.5);
 }
 
-.write-us-form input:invalid,
+/*.write-us-form input:invalid,
 .write-us-form textarea:invalid {
 	background-color: rgba(237, 181, 181, 0.5);
-}
+}*/
 
 .button[type="submit"],
 .popup-close {
