@@ -61,11 +61,19 @@
   	<main>
   		<div class="container">
 	  		<h1 class="visually-hidden">Магазин электронных товаров Device</h1>
-	  		<section class="slider">
+	  		<section class="slider">	  			
+	  			<input class="visually-hidden slider-selfie-radio" type="radio" id="slider-selfie" name="slider-radio" checked>
+	  			<input class="visually-hidden slider-fitness-radio" type="radio" id="slider-fitness" name="slider-radio">
+	  			<input class="visually-hidden slider-quadcopter-radio" type="radio" id="slider-quadcopter" name="slider-radio">
+	  			<div class="slider-controls">
+		  			<label class="slider-selfie-label" for="slider-selfie">Монопод дял селфи</label>
+	          <label class="slider-fitness-label" for="slider-fitness">Фитнес браслет</label>
+	          <label class="slider-quadcopter-label" for="slider-quadcopter">Квадрокоптер</label>
+          </div>
 	  			<div class="slider-wrap slider-selfie">
 		  			<h2 class="visually-hidden">Монопод для селфи</h2>
-		  			<div class="slider-img slider-selfie-img">
-		  				<img src="img/slider-1.png" width="384" height="486" alt="Монопод для селфи">
+		  			<div class="slider-img ">
+		  				<img class="slider-selfie-img" src="img/slider-1.png" width="384" height="486" alt="Монопод для селфи">
 		  			</div>
 		  			<div class="slider-content">
 			 				<p class="slider-title">Делай селфи, <br>как Бен Стиллер!</p>
@@ -87,8 +95,8 @@
 		  		</div>
 	  			<div class="slider-wrap slider-fitness">
 		  			<h2 class="visually-hidden">Фитнесбраслет</h2>
-		  			<div class="slider-img slider-fitness-img">
-		  				<img src="img/slider-2.png" width="345" height="485" alt="Фитнесбраслет">
+		  			<div class="slider-img">
+		  				<img class="slider-fitness-img" src="img/slider-2.png" width="345" height="485" alt="Фитнесбраслет">
 		  			</div>
 		  			<div class="slider-content">
 		  				<p class="slider-title">Худеем <br>правильно!</p>
@@ -106,8 +114,8 @@
 		  		</div>
 	  			<div class="slider-wrap slider-quadcopter">
 	  				<h2 class="visually-hidden">Квадрокоптер</h2>
-	  				<div class="slider-img slider-quadcopter-img">
-	  					<img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
+	  				<div class="slider-img">
+	  					<img class="slider-quadcopter-img" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
 	  				</div>
 	  				<div class="slider-content">
 	  					<p class="slider-title">Пархает как бабочка, жалит как пчела!</p>
