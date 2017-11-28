@@ -237,7 +237,6 @@ input[type="radio"].visually-hidden {
 .user-menu {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-end;
 	align-items: center;
 	width: 500px;
 	margin-top: 22px;
@@ -307,7 +306,6 @@ input[type="radio"].visually-hidden {
 .site-menu {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-end;
 	flex-basis: 1040px;
 	width: 1040px;
 	margin-top: 24px;
