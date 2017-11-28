@@ -660,6 +660,29 @@ input[type="radio"].visually-hidden {
 	list-style: none;
 }
 
+.breadcrumbs li {
+	position: relative;
+
+	margin-right: 37px;
+}
+
+.breadcrumbs li:not(:first-child)::before {
+	content: "";
+
+	position: absolute;
+	top: 15px;
+	left: -23px;
+	
+	width: 4px;
+	height: 4px;
+
+	background-color: transparent;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+
+	transform: rotate(-45deg);
+}
+
 .breadcrumbs a {
 	font-size: 14px;
 	line-height: 36px;
