@@ -1626,6 +1626,7 @@ input[type="radio"].visually-hidden {
 .footer-user-menu {
 	display: flex;
 	flex-wrap: wrap;
+	width: 700px;
 	margin: 0;
 	padding: 0;
 }
@@ -1633,7 +1634,19 @@ input[type="radio"].visually-hidden {
 .footer-user-menu li {
 	position: relative;
 
-	margin-left: 62px;
+	margin-right: 62px;
+}
+
+.footer-user-menu li:first-of-type {
+	margin-left: auto;
+}
+
+.footer-user-menu li:last-of-type {
+	margin-right: 0;
+}
+
+.footer-user-menu .footer-profile-item {
+	margin-right: 20px;
 }
 
 .footer-user-menu,
@@ -1652,10 +1665,6 @@ input[type="radio"].visually-hidden {
 .footer-login-out {
 	line-height: 36px;
 	color: rgba(255, 255, 255, 0.3);
-}
-
-.footer-profile-item {
-	margin-right: -38px;
 }
 
 .footer-user-menu a:hover {
