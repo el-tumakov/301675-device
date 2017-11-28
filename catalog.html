@@ -81,8 +81,8 @@
                 <div class="filter-price filter-item">
                   <hr class="filter-line">
                   <fieldset class="filter-fieldset">
-                    <legend>
-                      <label class="filter-item-title" for="price">Стоимость</label>
+                    <legend class="filter-item-title">
+                      <label for="price">Стоимость</label>
                     </legend>
                   <input class="filter-input filter-item-range" id="price" type="range" name="price" value="">
                   </fieldset>
@@ -91,15 +91,15 @@
                   <hr class="filter-line">
                   <fieldset class="filter-fieldset">
                     <legend class="filter-item-title">Цвет</legend>
-                    <input class="filter-input filter-checkbox-item" id="color-black" type="checkbox" name="color-black" checked>
+                    <input class="filter-checkbox visually-hidden" id="color-black" type="checkbox" name="color-black" checked>
                     <label class="filter-label filter-checkbox-title" for="color-black">Черный</label>
-                    <input class="filter-input filter-checkbox-item" id="color-white" type="checkbox" name="color-white">
+                    <input class="filter-checkbox visually-hidden" id="color-white" type="checkbox" name="color-white">
                     <label class="filter-label filter-checkbox-title" for="color-white">Белый</label>
-                    <input class="filter-input filter-checkbox-item" id="color-blue" type="checkbox" name="color-blue" checked>
+                    <input class="filter-checkbox visually-hidden" id="color-blue" type="checkbox" name="color-blue" checked>
                     <label class="filter-label filter-checkbox-title" for="color-blue">Синий</label>
-                    <input class="filter-input filter-checkbox-item" id="color-red" type="checkbox" name="color-red" checked>
+                    <input class="filter-checkbox visually-hidden" id="color-red" type="checkbox" name="color-red" checked>
                     <label class="filter-label filter-checkbox-title" for="color-red">Красный</label>
-                    <input class="filter-input filter-checkbox-item" id="color-pink" type="checkbox" name="color-pink">
+                    <input class="filter-checkbox visually-hidden" id="color-pink" type="checkbox" name="color-pink">
                     <label class="filter-label filter-checkbox-title" for="color-pink">Розовый</label>
                   </fieldset>
                 </div>
@@ -107,9 +107,9 @@
                   <hr class="filter-line">
                   <fieldset class="filter-fieldset">
                     <legend class="filter-item-title">Bluetooth</legend>
-                    <input class="filter-input filter-radio-item" id="bluetooth-on" type="radio" name="bluetooth" value="bluetooth-on" checked>
+                    <input class="visually-hidden filter-radio-item" id="bluetooth-on" type="radio" name="bluetooth" value="bluetooth-on" checked>
                     <label class="filter-label filter-radio-title" for="bluetooth-on">Есть</label>
-                    <input class="filter-input filter-radio-item" id="bluetooth-off" type="radio" name="bluetooth" value="bluetooth-off">
+                    <input class="visually-hidden filter-radio-item" id="bluetooth-off" type="radio" name="bluetooth" value="bluetooth-off">
                     <label class="filter-label filter-radio-title" for="bluetooth-off">Нет</label>
                   </fieldset>
                 </div>
@@ -189,7 +189,7 @@
     		  </section>
       </div>
   	</main>
-  	<footer class="main-footer">
+  	<footer class="main-footer footer">
       <div class="container">
         <div class="footer-top">
           <div class="logo-title">
