@@ -415,7 +415,8 @@ input[type="radio"].visually-hidden {
 	opacity: 0.3;
 }
 
-.site-menu-catalog:hover .submenu-wrap {
+.site-menu-catalog:hover .submenu-wrap,
+.site-menu-link:focus + .submenu-wrap {
 	z-index: 1;
 
 	display: block;
@@ -1101,6 +1102,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item h3 {
 	order: 1;
+	width: 280px;
 	margin: 25px 0 0 0;
 	line-height: 10px;
 }
@@ -1146,6 +1148,7 @@ input[type="radio"].visually-hidden {
 .pagination {
 	display: flex;
 	margin-top: 23px;
+	margin-bottom: 77px;
 	width: 760px;
 }
 
@@ -1477,7 +1480,6 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	align-items: center;
 	margin: 0;
 	padding: 0;
 
@@ -1491,6 +1493,8 @@ input[type="radio"].visually-hidden {
 
 .brands-link {
 	position: relative;
+
+	display: block;
 }
 
 .brands-img {
