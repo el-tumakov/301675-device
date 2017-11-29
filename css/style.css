@@ -147,7 +147,7 @@ input[type="radio"].visually-hidden {
 	position: relative;
 }
 
-.search::before {
+.search-label::before {
 	content: "";
 
 	position: absolute;
@@ -540,7 +540,7 @@ input[type="radio"].visually-hidden {
 
 .button {
 	display: inline-block;
-	height: 30px;
+	min-height: 30px;
 	padding-top: 10px; 
 
 	font-family: "Gilroy", "Arial", sans-serif;
@@ -554,10 +554,10 @@ input[type="radio"].visually-hidden {
 	vertical-align: top;
 
 	background-image: linear-gradient(to bottom, 
-		transparent 16px, 
-		#f0c52e 16px, 
-		#f0c52e 24px, 
-		transparent 24px);
+		transparent 40%, 
+		#f0c52e 40%, 
+		#f0c52e 60%, 
+		transparent 60%);
 }
 
 .button:hover {
@@ -569,7 +569,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-more {
-	width: 220px;
+	min-width: 220px;
 	margin-top: 43px;
 	margin-left: 1px;
 }
@@ -795,8 +795,8 @@ input[type="radio"].visually-hidden {
 
 .filter-button {
 	display: inline-block;
-	height: 40px;
-	width: 200px;
+	min-height: 40px;
+	min-width: 200px;
 	margin-top: 31px;
 	padding: 0;
 
@@ -1070,6 +1070,11 @@ input[type="radio"].visually-hidden {
 	position: relative;
 }
 
+.catalog-item-image img {
+	width: 360px;
+	height: 380px;
+}
+
 .catalog-buttons-hidden {
 	position: absolute;
 	top: 172px;
@@ -1083,7 +1088,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-buttons-hidden .button {
-	width: 200px;
+	min-width: 200px;
 }
 
 .catalog-item-image:hover .catalog-buttons-hidden {
@@ -1365,7 +1370,7 @@ input[type="radio"].visually-hidden {
 }
 
 .service-list .button {
-	width: 160px;
+	min-width: 160px;
 	vertical-align: bottom;
 
 	text-transform: uppercase;
@@ -1602,7 +1607,7 @@ input[type="radio"].visually-hidden {
 }
 
 .info-button {
-	width: 260px;
+	min-width: 260px;
 	margin-top: auto;
 	margin-bottom: 0;
 }
