@@ -817,6 +817,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-fieldset {
+	margin-top: 12px;
 	padding: 0;
 
 	border: 0;
@@ -827,7 +828,6 @@ input[type="radio"].visually-hidden {
 
 	display: flex;
 	flex-direction: column;
-	margin-top: 12px;
 }
 
 .filter-input,
@@ -1155,15 +1155,19 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	padding: 0;
+
+	list-style: none;
 }
 
 .pagination-back,
-.pagination-forward {
+.pagination-forward,
+.pagination-number-list {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	width: 126px;
+	min-width: 126px;
 }
 
 .pagination a {

@@ -56,7 +56,6 @@
             <li><a class="site-menu-link" href="#">Гарантия</a></li>
             <li><a class="site-menu-link" href="#">Контакты</a></li>
           </ul>
-          </ul>
         </nav>
       </div>
     </header>
@@ -81,19 +80,19 @@
                 <div class="filter-price filter-item">
                   <hr class="filter-line">
                   <fieldset class="filter-fieldset">
-                    <div class="fieldset-wrap">
-                      <legend class="filter-item-title">
-                        <label for="price">Стоимость</label>
-                      </legend>
-                      <input class="filter-input filter-item-range" id="price" type="range" name="price" value="">
+                    <legend class="filter-item-title">
+                      <label for="price">Стоимость</label>
+                    </legend>
+                    <div class="fieldset-wrap"> 
+                      <input class="filter-input filter-item-range" id="price" type="range" name="price">
                     </div>
                   </fieldset>
                 </div>
                 <div class="filter-color filter-item">
                   <hr class="filter-line">
                   <fieldset class="filter-fieldset">
+                    <legend class="filter-item-title">Цвет</legend>
                     <div class="fieldset-wrap">
-                      <legend class="filter-item-title">Цвет</legend>
                       <input class="filter-input filter-checkbox visually-hidden" id="color-black" type="checkbox" name="color-black" checked>
                       <label class="filter-label filter-checkbox-title" for="color-black">Черный</label>
                       <input class="filter-input filter-checkbox visually-hidden" id="color-white" type="checkbox" name="color-white">
@@ -110,8 +109,8 @@
                 <div class="filter-bluetooth filter-item">
                   <hr class="filter-line">
                   <fieldset class="filter-fieldset">
+                    <legend class="filter-item-title">Bluetooth</legend>
                     <div class="fieldset-wrap">
-                      <legend class="filter-item-title">Bluetooth</legend>
                       <input class="filter-input visually-hidden filter-radio-item" id="bluetooth-on" type="radio" name="bluetooth" value="bluetooth-on" checked>
                       <label class="filter-label filter-radio-title" for="bluetooth-on">Есть</label>
                       <input class="filter-input visually-hidden filter-radio-item" id="bluetooth-off" type="radio" name="bluetooth" value="bluetooth-off">
@@ -186,11 +185,13 @@
             <div class="pagination">
       				<ul class="pagination-list">
       				  <li class="pagination-back"><a class="pagination-button" href="#">Назад</a></li>
-                <div class="pagination-number">
-      				    <li class="pagination-number-item"><a class="pagination-number-link pagination-item-current">1</a></li>
-      				    <li class="pagination-number-item"><a class="pagination-number-link" href="#">2</a></li>
-    					    <li class="pagination-number-item"><a class="pagination-number-link" href="#">3</a></li>
-                </div>
+                <li class="pagination-number-list">
+                  <ul class="pagination-number">
+      				      <li class="pagination-number-item"><a class="pagination-number-link pagination-item-current">1</a></li>
+      				      <li class="pagination-number-item"><a class="pagination-number-link" href="#">2</a></li>
+    					     <li class="pagination-number-item"><a class="pagination-number-link" href="#">3</a></li>
+                 </ul>
+                </li>
       				  <li class="pagination-forward"><a class="pagination-button" href="#">Вперед</a></li>
       			  </ul>
       			</div>
