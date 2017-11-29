@@ -422,7 +422,8 @@ input[type="radio"].visually-hidden {
 .page-title,
 .slider-title,
 .service-title,
-.info-title {
+.info-title,
+.info h2 {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 47px;
 	line-height: 1.2;
@@ -1493,7 +1494,7 @@ input[type="radio"].visually-hidden {
 	position: relative;
 
 	display: flex;
-	margin-top: 141px;
+	margin-top: 117px;
 }
 
 .about-wrap,
@@ -1507,7 +1508,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	min-height: 525px;
+	min-height: 549px;
 }
 
 .about {
@@ -1523,6 +1524,7 @@ input[type="radio"].visually-hidden {
 	content: "";
 
 	position: absolute;
+	top: -24px;
 
 	width: 80px;
 	height: 7px;
@@ -1530,26 +1532,27 @@ input[type="radio"].visually-hidden {
 }
 
 .about::before {
-	top: -48px;
 	left: 0;
 }
 
 .contacts::before {
-	top: -48px;
 	left: 600px;
 }
 
-.info-title {
-	margin-top: 0;
+.info-title,
+.info h2 {
+	margin-top: 24px;
 	margin-bottom: 24px;
 	margin-left: -1px;
 }
 
-.about .info-text {
+.about .info-text,
+.info p {
 	width: 485px;
 }
 
-.transport-list {
+.transport-list,
+.info ul {
 	margin-top: 51px;
 	margin-bottom: auto;
 	padding: 0;
