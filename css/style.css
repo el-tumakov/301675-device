@@ -529,10 +529,6 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-content {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	align-items: flex-start;	
 	width: 560px;
 }
 
@@ -1329,13 +1325,17 @@ input[type="radio"].visually-hidden {
 	margin-top: 142px;
 }
 
+.service-list-wrap {
+	display: flex;
+	flex-direction: column;
+}
+
 .service-list {
 	position: relative;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	align-self: flex-start;
 	width: 280px;
 	min-height: 169px;
 	margin: 10px 121px 0 0;
@@ -1370,15 +1370,15 @@ input[type="radio"].visually-hidden {
 	cursor: pointer;
 }
 
-.service-delivery-radio:checked ~ .service-list .service-delivery-item,
-.service-warrantly-radio:checked ~ .service-list .service-warrantly-item,
-.service-credit-radio:checked ~ .service-list .service-credit-item {
+.service-delivery-radio:checked ~ .service-list-wrap .service-delivery-item,
+.service-warrantly-radio:checked ~ .service-list-wrap .service-warrantly-item,
+.service-credit-radio:checked ~ .service-list-wrap .service-credit-item {
 	background-color: #000000;
 }
 
-.service-delivery-radio:checked ~ .service-list .delivery-link,
-.service-warrantly-radio:checked ~ .service-list .warrantly-link,
-.service-credit-radio:checked ~ .service-list .credit-link {
+.service-delivery-radio:checked ~ .service-list-wrap .delivery-link,
+.service-warrantly-radio:checked ~ .service-list-wrap .warrantly-link,
+.service-credit-radio:checked ~ .service-list-wrap .credit-link {
 	color: #f7e184;
 
 	background-color: #000000;
@@ -1502,8 +1502,13 @@ input[type="radio"].visually-hidden {
 	position: relative;
 
 	display: flex;
-	min-height: 525px;
 	margin-top: 141px;
+}
+
+.about-wrap,
+.contacts-wrap {
+	display: flex;
+	flex-direction: column;
 }
 
 .about,
@@ -1511,6 +1516,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	min-height: 525px;
 }
 
 .about {
