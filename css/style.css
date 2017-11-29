@@ -226,6 +226,8 @@ input[type="radio"].visually-hidden {
 
 .search input:focus + .button-search {
 	display: inline-block;
+
+	vertical-align: top;
 }
 
 .user-menu,
@@ -549,6 +551,7 @@ input[type="radio"].visually-hidden {
 	font-weight: 700;
 	text-transform: uppercase;
 	text-align: center;
+	vertical-align: top;
 
 	background-image: linear-gradient(to bottom, 
 		transparent 16px, 
@@ -796,6 +799,8 @@ input[type="radio"].visually-hidden {
 	width: 200px;
 	margin-top: 31px;
 	padding: 0;
+
+	vertical-align: top;
 
 	cursor: pointer;
 }
@@ -1466,7 +1471,6 @@ input[type="radio"].visually-hidden {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	width: 1160px;
 	margin: 0;
 	padding: 0;
 
