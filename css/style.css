@@ -1139,6 +1139,7 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination {
+	display: flex;
 	margin-top: 23px;
 	width: 760px;
 }
@@ -1149,6 +1150,7 @@ input[type="radio"].visually-hidden {
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;
+	width: 100%;
 	min-height: 70px;
 
 	list-style: none;
@@ -1691,7 +1693,6 @@ input[type="radio"].visually-hidden {
 
 .footer-user-menu a:hover {
 	color: #ffffff;
-	opacity: 0.7;
 }
 
 .footer-user-menu a:active {
