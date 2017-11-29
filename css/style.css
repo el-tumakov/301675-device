@@ -339,7 +339,21 @@ input[type="radio"].visually-hidden {
 	text-align: end;
 }
 
-.site-menu-catalog a::before,
+.site-menu-catalog a::before {
+	content: "┿";
+   
+  position: absolute;
+  top: 7px;
+  right: -28px;
+    
+  width: 17px;
+  height: 16px;
+  
+  font-size: 18px;
+  color: #b8a974;
+}
+
+/*.site-menu-catalog a::before,
 .site-menu-catalog a::after {
 	content: "";
 
@@ -355,7 +369,7 @@ input[type="radio"].visually-hidden {
 
 .site-menu-catalog a::after {
 	transform: rotate(90deg);
-}
+}*/
 
 .submenu-wrap {
 	position: absolute;
