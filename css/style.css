@@ -566,7 +566,7 @@ input[type="radio"].visually-hidden {
 }
 
 .button:hover {
-	background-color: #f0c52e;
+	background: #f0c52e;
 }
 
 .button:active {
