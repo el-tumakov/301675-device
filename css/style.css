@@ -339,37 +339,28 @@ input[type="radio"].visually-hidden {
 	text-align: end;
 }
 
-.site-menu-catalog a::before {
-	content: "┿";
-   
-  position: absolute;
-  top: 7px;
-  right: -28px;
-    
-  width: 17px;
-  height: 16px;
-  
-  font-size: 18px;
-  color: #b8a974;
-}
-
-/*.site-menu-catalog a::before,
+/*Решил нарисовать, а то знак плюса по-разному в браузерах отображается*/
+.site-menu-catalog a::before,
 .site-menu-catalog a::after {
 	content: "";
 
 	position: absolute;
-	top: 17px;
+	top: 10px;
 	right: -28px;
 
 	width: 16px;
-	height: 2px;
-
-	background-color: #b8a974;
+	height: 16px;
+	background-image: linear-gradient(
+		to bottom,
+		transparent 7px,
+		#b8a974 7px,
+		#b8a974 9px,
+		transparent 9px);
 }
 
 .site-menu-catalog a::after {
 	transform: rotate(90deg);
-}*/
+}
 
 .submenu-wrap {
 	position: absolute;
