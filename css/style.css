@@ -147,7 +147,7 @@ input[type="radio"].visually-hidden {
 	position: relative;
 }
 
-.search::before {
+.search-label::before {
 	content: "";
 
 	position: absolute;
@@ -415,7 +415,8 @@ input[type="radio"].visually-hidden {
 	opacity: 0.3;
 }
 
-.site-menu-catalog:hover .submenu-wrap {
+.site-menu-catalog:hover .submenu-wrap,
+.site-menu-link:focus + .submenu-wrap {
 	z-index: 1;
 
 	display: block;
@@ -540,7 +541,7 @@ input[type="radio"].visually-hidden {
 
 .button {
 	display: inline-block;
-	height: 30px;
+	min-height: 30px;
 	padding-top: 10px; 
 
 	font-family: "Gilroy", "Arial", sans-serif;
@@ -554,10 +555,10 @@ input[type="radio"].visually-hidden {
 	vertical-align: top;
 
 	background-image: linear-gradient(to bottom, 
-		transparent 16px, 
-		#f0c52e 16px, 
-		#f0c52e 24px, 
-		transparent 24px);
+		transparent 40%, 
+		#f0c52e 40%, 
+		#f0c52e 60%, 
+		transparent 60%);
 }
 
 .button:hover {
@@ -569,7 +570,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-more {
-	width: 220px;
+	min-width: 220px;
 	margin-top: 43px;
 	margin-left: 1px;
 }
@@ -1070,6 +1071,11 @@ input[type="radio"].visually-hidden {
 	position: relative;
 }
 
+.catalog-item-image img {
+	width: 360px;
+	height: 380px;
+}
+
 .catalog-buttons-hidden {
 	position: absolute;
 	top: 172px;
@@ -1083,7 +1089,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-buttons-hidden .button {
-	width: 200px;
+	min-width: 200px;
 }
 
 .catalog-item-image:hover .catalog-buttons-hidden {
@@ -1096,6 +1102,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item h3 {
 	order: 1;
+	width: 280px;
 	margin: 25px 0 0 0;
 	line-height: 10px;
 }
@@ -1139,7 +1146,9 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination {
+	display: flex;
 	margin-top: 23px;
+	margin-bottom: 77px;
 	width: 760px;
 }
 
@@ -1149,6 +1158,7 @@ input[type="radio"].visually-hidden {
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;
+	width: 100%;
 	min-height: 70px;
 
 	list-style: none;
@@ -1363,7 +1373,7 @@ input[type="radio"].visually-hidden {
 }
 
 .service-list .button {
-	width: 160px;
+	min-width: 160px;
 	vertical-align: bottom;
 
 	text-transform: uppercase;
@@ -1470,7 +1480,6 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	align-items: center;
 	margin: 0;
 	padding: 0;
 
@@ -1484,6 +1493,8 @@ input[type="radio"].visually-hidden {
 
 .brands-link {
 	position: relative;
+
+	display: block;
 }
 
 .brands-img {
@@ -1600,7 +1611,7 @@ input[type="radio"].visually-hidden {
 }
 
 .info-button {
-	width: 260px;
+	min-width: 260px;
 	margin-top: auto;
 	margin-bottom: 0;
 }
@@ -1691,7 +1702,6 @@ input[type="radio"].visually-hidden {
 
 .footer-user-menu a:hover {
 	color: #ffffff;
-	opacity: 0.7;
 }
 
 .footer-user-menu a:active {
