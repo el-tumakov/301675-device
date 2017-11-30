@@ -1159,6 +1159,36 @@ input[type="radio"].visually-hidden {
 	height: 380px;
 }
 
+.catalog-item-new::before {
+	content: "New";
+
+	position: absolute;
+	top: 51px;
+	right: 40px;
+
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 1.2;
+	letter-spacing: 0.05;
+	color: #cecece;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.catalog-item-new::after {
+	content: "";
+
+	position: absolute;
+	top: 27px;
+	right: 26px;
+
+	width: 58px;
+	height: 58px;
+
+	border: 2px solid #cecece;
+	border-radius: 50%;
+}
+
 .catalog-buttons-hidden {
 	position: absolute;
 	top: 172px;
