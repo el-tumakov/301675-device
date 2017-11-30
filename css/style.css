@@ -571,6 +571,7 @@ input[type="radio"].visually-hidden {
 
 .slider-more {
 	min-width: 220px;
+	max-width: 350px;
 	margin-top: 43px;
 	margin-left: 1px;
 }
@@ -625,8 +626,6 @@ input[type="radio"].visually-hidden {
 	width: 10px;
 	height: 10px;
 
-	font-size: 0;
-
 	background-color: transparent;
 	border: 1px solid #000000;
 	border-radius: 50%;
@@ -643,7 +642,7 @@ input[type="radio"].visually-hidden {
 	top: 2px;
 	left: 2px;
 
-	display: none;
+	opacity: 0;
 	width: 4px;
 	height: 4px;
 
@@ -655,13 +654,19 @@ input[type="radio"].visually-hidden {
 .slider-selfie-radio:checked ~ .slider-controls .slider-selfie-label::before,
 .slider-fitness-radio:checked ~ .slider-controls .slider-fitness-label::before,
 .slider-quadcopter-radio:checked ~ .slider-controls .slider-quadcopter-label::before {
-	display: block;
+	opacity: 1;
 }
 
 .slider-selfie-radio:checked ~ .slider-selfie,
 .slider-fitness-radio:checked ~ .slider-fitness,
 .slider-quadcopter-radio:checked ~ .slider-quadcopter {
 	display: flex;
+}
+
+.slider-selfie-radio:focus ~ .slider-controls .slider-selfie-label,
+.slider-fitness-radio:focus ~ .slider-controls .slider-fitness-label,
+.slider-quadcopter-radio:focus ~ .slider-controls .slider-quadcopter-label {
+	box-shadow: 0 0 2px 2px skyblue;
 }
 
 .page-title-wrap {
@@ -937,6 +942,10 @@ input[type="radio"].visually-hidden {
 .filter-radio-title:hover::before,
 .filter-radio-title:hover::after {
 	opacity: 0.6;
+}
+
+.filter-input:focus + .filter-label::before {
+	box-shadow: 0 0 2px 2px skyblue;
 }
 
 .filter-input:disabled + .filter-label {
@@ -1395,6 +1404,12 @@ input[type="radio"].visually-hidden {
 	background-color: #000000;
 	background-image: none;
 	opacity: 1;
+}
+
+.service-delivery-radio:focus ~ .service-list-wrap .service-delivery-item,
+.service-warrantly-radio:focus ~ .service-list-wrap .service-warrantly-item,
+.service-credit-radio:focus ~ .service-list-wrap .service-credit-item {
+	outline: 2px solid skyblue;
 }
 
 .service-list .button:active {
