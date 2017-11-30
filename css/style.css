@@ -780,6 +780,10 @@ input[type="radio"].visually-hidden {
 	margin-left: 60px;
 }
 
+.filter-title {
+	display: flex;
+}
+
 .filter-title-wrap {
 	display: flex;
 	align-items: center;
