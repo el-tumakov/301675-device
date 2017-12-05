@@ -1675,6 +1675,10 @@ input[type="radio"].visually-hidden {
 	width: 485px;
 }
 
+.contacts .info-text {
+	width: 520px;
+}
+
 .info ul,
 .transport-list {
 	margin-top: 51px;
