@@ -32,7 +32,7 @@ feedbackForm.addEventListener("submit", function(evt) {
 	if (!feedbackName.value || !feedbackEmail.value || !feedbackText.value) {
 		evt.preventDefault();
 		feedbackPopup.classList.remove("popup-error");
-    feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
+		feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
 		feedbackPopup.classList.add("popup-error");
 	} else {
 		localStorage.setItem("feedbackName", feedbackName.value);
