@@ -255,9 +255,12 @@ input[type="radio"].visually-hidden {
 	margin-right: 0;
 }
 
+.user-menu li.user-item-enter {
+	margin-right: 20px;
+}
+
 .user-menu .user-item-exit {
 	padding: 0;
-	margin-left: -38px;
 	margin-right: auto;
 }
 
